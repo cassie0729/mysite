@@ -1,0 +1,65 @@
+---
+title: "Music Genre Classification via Machine Learning"
+description: "Rock, Instrumental & Hip Hop prediction with KNN, Random Forest and AdaBoost"
+format:
+  html:
+    toc: true        
+    number-sections: true
+    code-fold: true   
+    page-layout: full
+---
+
+## Motivation
+
+Streaming platforms publish tens of thousands of tracks daily, blurring genre boundaries and stretching human taggers thin. An automatic classifier that reliably separates **Rock, Instrumental and Hip Hop** can cut curation time and power downstream recommendation engines.:contentReference[oaicite:0]{index=0}
+
+## Data
+
+* **Source** – Kaggle “Music Genre Classification” (Machine Hack Hackathon).  
+* **Observations** – 17999 tracks, already split 80 / 20 into train/test.  
+* **Predictors** – 16 audio-level features (e.g., *danceability*, *energy*, *loudness*, *tempo*, *duration_ms*) plus artist & track names.  
+* **Target** – 11 original genres (0–10). We subset to classes 10 (Rock), 7 (Instrumental) and 5 (Hip Hop) for their distinct audio signatures and sample sizes (3374, 517 and 464 tracks respectively).
+
+After dropping rows with missing *instrumentalness*, *key* or *popularity*, the working dataset contains **4355** observations.
+
+### Exploratory analysis (EDA)
+
+* Distributions vary widely: *energy* and *loudness* are left-skewed; *acousticness* and *instrumentalness* are heavily right-skewed.  
+* Rock dominates the sample (≈ 78 %), producing a **class-imbalance risk**.  
+* Correlation heat-map highlights a strong positive link between *energy* and *loudness* and a negative link between each and *acousticness*. 
+* PCA confirms Instrumental music is separated mostly along PC1 (low energy, high acousticness), whereas Rock and Hip Hop overlap along intensity but differ along danceability/valence (PC2).
+
+## Methods
+
+| Model | Key settings | Rationale |
+|-------|--------------|-----------|
+| **K-Nearest Neighbours** | k = 5 (10-fold CV) | Non-parametric, robust to non-Gaussian features |
+| **Random Forest** | 25 trees, entropy split, depth ≤ 8 | Handles non-linear boundaries; decorrelates trees for stability |
+| **AdaBoost** | 25 estimators, learning-rate 0.8 | Combines shallow trees; useful for heterogeneous margins |
+
+Hyper-parameters were tuned with grid-search and stratified 80/20 train-test splits. All numeric predictors were z-standardised; categoricals were dummy-coded.
+
+## Results
+
+| Metric | KNN | Random Forest | AdaBoost |
+|--------|-----|---------------|----------|
+| **Overall test accuracy** | 95 % | **97.2 %** | 91.9 % |
+| Rock accuracy | 99 % | **99 %** | 96 % |
+| Instrumental accuracy | 96 % | **95 %** | 89 % |
+| Hip Hop accuracy | 55 % | **52 %** | 47 % |
+
+> Random Forest yields the highest macro accuracy, but all models struggle on the minority Hip Hop class, reflecting the imbalance noted earlier.
+
+### Feature importance (Random Forest)
+
+`duration_ms` dominates (> 30 % of total importance), followed by *energy*, *acousticness*, *danceability* and *speechiness* – intuitive given that Instrumental tracks are typically shorter, quieter and more acoustic than Rock or Hip Hop.
+
+## Discussion & Future Work
+
+* **Class imbalance** depresses Hip Hop recall; bootstrap or SMOTE resampling could redress this.  
+* **Model simplicity vs. performance** – KNN rivals Random Forest despite zero training, underscoring that a well-scaled feature space often suffices.  
+* **Over-fitting guardrails** – Adding PCA components as engineered features or pruning correlated variables could further stabilise ensembles.  
+* **Granular genres** – Extending the pipeline to the remaining eight genres will test scalability and reveal whether similarity in audio space (e.g., Rock vs. Metal) erodes accuracy.
+
+---
+

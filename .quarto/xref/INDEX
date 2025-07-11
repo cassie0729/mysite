@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "6f1dba5d"
+  },
+  "about.qmd": {
+    "about.html": "d0ada9bb"
+  },
+  "projects.qmd": {
+    "projects.html": "4dd350d2"
+  },
+  "projects/bootstrap.qmd": {
+    "bootstrap.html": "767d8cd3"
+  },
+  "projects/hmc.qmd": {
+    "hmc.html": "4ab78ce9"
+  },
+  "projects/dpca.qmd": {
+    "dpca.html": "d6f54226"
+  },
+  "projects/index.qmd": {
+    "index.html": "9dfdb295"
+  },
+  "projects/music.qmd": {
+    "music.html": "62a88ade"
+  },
+  "projects/PreEclampsia.qmd": {
+    "PreEclampsia.html": "3231ae05"
+  }
+}

@@ -1,0 +1,125 @@
+---
+title: "Bootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA"
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: true
+    page-layout: full
+---
+
+## Motivation
+This page summarises my undergraduate research project on how well *bootstrap* methods recover confidence intervals for the leading eigenvalues of a covariance matrix in high‑dimensional **Principal Component Analysis (PCA)**.
+
+When data are high‑dimensional, estimating uncertainty for the true eigenvalues $\lambda_1,\ldots,\lambda_p$ of the covariance matrix is notoriously hard. Conventional asymptotics break down once $p$ is of the same order as $n$. I explored whether *non‑parametric bootstrap* can still provide reliable **95 % confidence intervals (CIs)** across a range of eigen‑decay rates parameterised by
+
+$\lambda_j = j^{-\beta},\;\; \beta \ge 0.$
+
+The guiding questions were:
+
+* How does the empirical coverage of bootstrap CIs vary with $\beta$?
+* How many bootstrap replications $B$ and Monte‑Carlo repetitions $M$ are needed for stable results?
+* Can cloud resources speed up large‑scale simulations?
+
+## Background
+
+### Principal Component Analysis (PCA)
+
+PCA projects the centred data matrix $Y_{n\times p}$ onto directions maximising variance. These directions are the eigenvectors of the sample covariance
+
+$S = \frac{1}{n}\sum_{i=1}^{n} Y_i Y_i^T.$
+
+Retaining only the top few components often captures most information.
+
+### Bootstrap
+
+The **bootstrap** assesses estimator variability by resampling **with replacement** from the observed data. Given an estimator $\hat\theta$, the basic percentile CI is
+
+$\bigl[\hat\theta- q_{1-\alpha/2}(\hat\theta^* -\hat\theta),\;\hat\theta- q_{\alpha/2}(\hat\theta^* -\hat\theta)\bigr],$
+
+
+where $q_p$ denotes the $p$‑th quantile of the bootstrap distribution and $^*$ marks a resampled statistic.
+
+## Simulation design
+```r
+## 1  Percentile-CI ----------------------------------------------
+boot_ci <- function(B, X, lamdahat) {
+  n <- nrow(X)
+  lamdahat.boot <- numeric(B)
+  for (i in seq_len(B)) {
+    idx  <- sample.int(n, replace = TRUE)
+    S_b  <- cov(X[idx, ])
+    lamdahat.boot[i] <- max(eigen(S_b, symmetric = TRUE, only.values = TRUE)$values)
+  }
+  diff <- lamdahat.boot - lamdahat
+  ci   <- quantile(diff, c(0.025, 0.975))
+  c(lamdahat - ci[2], lamdahat - ci[1])  
+}
+
+## 2  Monte-Carlo --------------------------------------------------
+bootstrap_eigen_coverage <- function(S  = 5_000,  
+                                     n  = 1_000,   
+                                     p  = 30,     
+                                     B  = 2_000,   
+                                     true_lambda1 = 3) {
+  library(MASS)             
+  
+  lambda <- c(3, 2, 1, rep(1, p - 3))
+  Sigma  <- diag(lambda)
+  
+  covered <- logical(S)
+  for (s in seq_len(S)) {
+    X <- mvrnorm(n, rep(0, p), Sigma)
+    lamdahat <- max(eigen(cov(X), symmetric = TRUE, only.values = TRUE)$values)
+    ci <- boot_ci(B, X, lamdahat)
+    covered[s] <- ci[1] <= true_lambda1 && true_lambda1 <= ci[2]
+  }
+  
+  mean(covered)             
+}
+```
+
+1. **Data generation**   Generate $M$ independent datasets from $\mathcal N\bigl(0,\operatorname{diag}(\lambda_1,\ldots,\lambda_p)\bigr)$ with $n=1000$, $p=30$.
+2. **Bootstrap CIs**     For each dataset and each $\beta$ on a user‑defined grid, run the percentile bootstrap with $B=2000$ resamples to obtain a 95 % CI for $\lambda_1$.
+3. **Coverage check**    Record whether the true $\lambda_1$ falls inside its CI (1 = success, 0 = failure). Empirical coverage = mean of indicators.
+
+##  Results
+
+Below are the coverage curves for three representative grids of $\beta$. The horizontal grey line marks the nominal 95 % level.
+
+### Dense grid ($\Delta\beta = 0.1$)
+
+![Coverage when Δβ = 0.1, n = 1000, p = 30](images/grid_0.1_n1000_p30.jpg){#fig-grid01 width="80%"}
+
+### Medium grid ($\Delta\beta = 0.25$)
+
+![Coverage when Δβ = 0.25, n = 1000, p = 30](images/grid_0.25_n1000_p30.jpg){#fig-grid025 width="80%"}
+
+### Sparse grid ($\Delta\beta = 0.5$)
+
+![Coverage when Δβ = 0.5, n = 1000, p = 30](images/grid_0.5_n1000_p30.jpg){#fig-grid05 width="80%"}
+
+
+## Key observations
+
+* As intuition suggests, **larger $\beta$ (faster eigenvalue decay) helps**—coverage climbs steadily and stabilises near the nominal line.
+* Around $\beta\approx1.5$ the method shows a dip, echoing the phase‑transition seen in random‑matrix theory.
+* Increasing the Monte‑Carlo repetitions $M$ smooths the curves substantially.
+
+## Discussion
+
+The bootstrap remains surprisingly robust even when $p$ is non‑negligible relative to $n$, provided the spectrum is sufficiently steep. However, for *flat* spectra the usual percentile interval **under‑covers**. Possible fixes:
+
+* Studentised or bias‑corrected & accelerated (BCa) bootstrap.
+* Eigen‑regularisation before resampling.
+* Variance stabilisation via log‑eigenvalues.
+
+## Limitations & future work
+
+* Extending to *dependent* data (e.g. time‑series) where resampling schemes must preserve structure.
+* Analytical comparison with Tracy–Widom based CIs.
+* Leveraging **cloud computing** (e.g. on Galileo) to push $M, n, p$ further without local bottlenecks.
+
+---
+
+

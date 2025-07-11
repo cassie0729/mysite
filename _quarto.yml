@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Nianlin Chen"     
+  site-url: "https://nianlinc.github.io"  
+  description: "Biostatistics · Bayesian Inference · Clinical Trials"
+  open-graph: true          
+
+  navbar:
+    logo: images/ava2.JPG          # 左侧 Logo（相对项目根路径）
+    left:
+      - text: "Home"                 # 链接首页；也可省略让 logo 指回首页
+        href: index.qmd
+      - about.qmd
+      - text: "Projects"
+        href: projects/index.qmd 
+    right:
+      - icon: github                 # 内置数十种图标
+        href: https://github.com/cassie0729
+      - icon: linkedin
+        href: https://www.linkedin.com/in/nianlin-chen-90b45a175
+      - icon: envelope
+        href: "mailto:chennianlin26@163.com"
+      #- text: "CV"
+      #  href: 'files/CV_Nianlin_Chen.pdf'
+
+  page-footer:
+    border: true               # 上边界线
+    left: "2025 Nianlin Chen"
+
+
+
+format:
+  html:
+    theme: cosmo            # 任何 Bootswatch 主题；常见有 litera、journal、flatly…
+    css: styles.css        # 若你需要自定义，创建 styles.scss 引用
+    toc: true               # 默认每页侧边目录
+    code-fold: true         # 可折叠代码块
+    highlight-style: github # 代码配色
+
+
+
+

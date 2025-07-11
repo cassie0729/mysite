@@ -1,0 +1,89 @@
+---
+title: "Demixed Principal Component Analysis (dPCA) in R"
+description: "An R package and case study for demixing neural population activity."
+page-layout: full        
+freeze: true
+format:
+  html:
+    toc: true            # 左侧目录
+---
+
+## Overview
+
+**Demixed Principal Component Analysis (dPCA)** extends classical PCA by *separating* (demixing) the variance in neural population activity that is attributable to different task parameters—typically time, stimulus and decision—while still preserving maximal variance overall. 
+Our team implemented dPCA in R and released it as the **`demixpca`** package.
+
+## Motivation
+
+Neurons in higher cortical areas often show *mixed selectivity*: a single neuron may respond to multiple sensory and motor variables, obscuring the underlying computation.  
+dPCA addresses this by projecting population responses onto low-dimensional axes that are *aligned* with individual task factors, facilitating interpretation and visualization.
+
+## Methodology
+
+### 1&nbsp;Marginalization
+
+For each neuron we decompose its trial-averaged firing matrix $X_{t s d k}$ into marginal means (overall, time-only, stimulus-only, decision-only, and their interactions) and a residual term. Summing these marginalizations reconstructs the original data.
+
+### 2&nbsp;Loss Function
+
+dPCA seeks encoder/decoder pairs $(P_\phi, F_\phi)$ for every marginalization $\phi$ by minimizing
+
+$L_{\phi} \;=\; \left\|X_{\phi} - P_{\phi}F_{\phi}X\right\|_{F}^{2}
+          \;+\; \lambda\,\left\|P_{\phi}F_{\phi}\right\|_{F}^{2}$
+
+where $\lambda$ is a ridge penalty to reduce over-fitting.
+
+### 3&nbsp;Reduced-Rank Regression Solver
+
+dPCA fits each marginal matrix $X_\phi$ by solving  
+
+$min_{P_\phi,F_\phi}\;\|X_\phi - P_\phi F_\phi X\|_F^{2}
+\;+\;
+\lambda\,\|P_\phi F_\phi\|_F^{2}$
+
+which is a **Reduced-Rank Regression (RRR)** problem.  
+The package implements three low-rank solvers, each with different speed/accuracy trade-offs:
+
+| Solver | Core idea   | Speed & Scalability | Accuracy & Stability | Typical use-case |
+|--------|-------------|--------------------|----------------------|------------------|
+| **Randomized SVD (RSVD)** | Approximate SVD via random projections; computes only the leading *q* singular vectors | **Fastest** for large matrices (e.g. 3.76 s vs 6.97 s for a $2{\times}100{\times}3{\times}800$ example)| Slightly lower precision for very high rank; repeat with multiple sketches to average out noise | Exploratory work on *big* data where small errors are acceptable |
+| **Full SVD** | Exact singular value decomposition | Medium; 2–3 times slower than RSVD on large matrices | **Highest accuracy**; deterministic | When numeric precision is critical or results feed into further quantitative analysis |
+| **Economy QR → SVD** | QR factorization first, then SVD on the R factor | Highly sensitive to **column count**: very slow when $D\!\times\!T\!\times\!S$ is large (54 s vs 3–4 s in a $4{\times}500{\times}6{\times}100$ test) | Very stable for “tall-and-skinny” matrices | Datasets with *many neurons but few task conditions* (rows ≫ columns) |
+
+**Practical guidelines**
+
+* **Need for speed?**  Large *N* or $D\!\times\!T\!\times\!S$ → choose **RSVD**.  
+* **Need for precision?**  High effective rank or downstream quantitative use → choose **SVD**.  
+* **Tall-and-skinny?**  Few task variables, many neurons → choose **QR**.
+
+**Implementation highlights** 
+
+1. Compute the ridge-regularised matrix  
+
+   $A_{\text{RR}} \;=\; X_\phi X^\top
+   \bigl(X X^\top + \lambda I\bigr)^{-1}$
+
+2. Apply RSVD / SVD / QR to obtain a **rank-q** approximation of $A_{\text{RR}}$.  
+3. Factor $A_{\text{RR}}\approx P_\phi F_\phi$:  
+   * Encoder $P_\phi =$ left singular vectors  
+   * Decoder $F_\phi =$ singular values × right singular vectors $^\top$
+
+Select the solver via the `method =` argument in `dpca()`:
+
+```r
+dpca(X, margins = c("decision", "time", "stimulus"),
+     n_comp = c(3, 3, 3),
+     method = "rsvd")  # or "svd", "qr"
+```
+
+## Implementation
+
+### Installation
+
+```r
+# install devtools first if needed
+install.packages("devtools")
+
+# install the development version of demixpca
+devtools::install_github("jhgoblue/demixpca")
+```

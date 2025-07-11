@@ -1,0 +1,125 @@
+---
+title: "Demand Forecasting via Bayesian Inference"
+description: "Walmart Weekly-Sales Prediction with Bayesian Linear & Hierarchical Models"
+format:
+  html:
+    toc: true
+    number-sections: true
+    page-layout: full
+---
+
+## Motivation
+
+Demand forecasting underpins inventory planning, pricing, and promotion in retail.  
+Accurate forecasts help Walmart maintain optimal stock levels and improve cash-flow management.  
+Because weekly sales depend on many interacting factors and exhibit heavy right-skew, we adopt **Bayesian modelling** to:
+
+* quantify parameter uncertainty;
+* incorporate hierarchical (store / department) structure; and  
+* obtain intuitive posterior summaries for decision-making.
+
+## Data
+
+We merge three publicly available Kaggle datasets[^kaggle]:
+
+* **Store:** anonymous metadata (Type A/B/C, Size).  
+* **Features:** weekly covariates 2010-02-05 → 2012-11-01 (Temperature, Fuel Price, CPI, Unemployment, five Markdown channels, *IsHoliday*).  
+* **Train:** 421570 observations of weekly department-level sales.
+
+After dropping the five *Markdown* variables (> 60 % missing), the final training set contains:
+
+Key characteristics:
+
+| Variable                | Type        | Note                               |
+|-------------------------|-------------|------------------------------------|
+| `Weekly_Sales`          | numeric     | right-skewed target                |
+| `Store`, `Dept`         | categorical | 45 stores; 81 departments          |
+| `IsHoliday`             | binary      | major US holidays                  |
+| `Temperature`           | numeric     | °F, weekly average                 |
+| `Fuel_Price`            | numeric     | regional cost per gallon           |
+| `CPI`, `Unemployment`   | numeric     | economic indicators                |
+| `Size`                  | numeric     | store floor area (ft²)             |
+| `Type`                  | categorical | A (large) / B / C (small)          |
+
+**Exploratory highlight**
+
+* Sales are highest for **Type A** stores and during **holiday weeks**.  
+* Larger `Size` correlates positively with sales, while higher `Unemployment`, `Fuel_Price`, and `CPI` show negative associations.  
+* Sales distribution is heavily right-tailed; ∼25 % of observations are near \$0.
+
+## Methodology
+
+### Bayesian Linear Regression
+
+Let  
+
+$$
+y_n \;=\;
+\beta_0 + \beta_1 \text{IsHoliday}_n + \beta_2 \text{Unemployment}_n
++ \beta_3 \text{Temperature}_n + \beta_4 \text{FuelPrice}_n
++ \beta_5 \text{CPI}_n + \beta_6 \text{Size}_n + \varepsilon_n,
+\qquad
+\varepsilon_n \sim \mathcal N\!\bigl(0,\sigma^2\bigr).
+$$
+
+All numeric predictors are **standardised**.  
+Diffuse but proper priors are used:
+
+| Parameter | Prior |
+|-----------|-------|
+| $\beta_k$ | $\mathcal N\!\bigl(\hat\beta_k^{\text{OLS}},\,10^{12}\bigr)$ |
+| $\sigma$  | Half-Cauchy$(0,25)$ |
+
+Posterior sampling is performed in **PyMC 3** with NUTS (adaptive HMC).  
+
+### Hierarchical Normal Model
+
+To capture store- and department-level heterogeneity we extend to
+
+$$
+y_{ij} \;=\;
+\beta_0 + \beta_1 \text{IsHoliday}_{ij} + \dots + \beta_6 \text{Size}_{ij}
++\alpha_i + \theta_j + \varepsilon_{ij},
+$$
+
+with $\alpha_i \sim \mathcal N(0,\sigma_\alpha^2), \;
+      \theta_j \sim \mathcal N(0,\sigma_\theta^2)$  
+and Half-Cauchy hyper-priors on variances.  
+Four Stan NUTS chains (2 000 warm-up + 2 000 sampling iterations each) were attempted.
+
+## Results
+
+### Linear Model Posterior
+
+* **Significant negative** effects: `Unemployment`, `Fuel_Price`, `CPI`.  
+* **Positive** effects: `Temperature`, `Size`.  
+* `IsHoliday` posterior includes 0, suggesting holiday uplift is explained by other covariates.
+
+| Predictor        | Posterior Mean | 95 % HDI           | Direction |
+|------------------|---------------:|-------------------:|-----------|
+| Unemployment     | –0.121         | [–0.139, –0.103]   | ↓         |
+| Fuel Price       | –0.087         | [–0.099, –0.075]   | ↓         |
+| CPI              | –0.051         | [–0.063, –0.040]   | ↓         |
+| Temperature      | +0.034         | [+0.023, +0.045]   | ↑         |
+| Size             | +0.217         | [+0.205, +0.229]   | ↑         |
+| IsHoliday        | +0.006         | [–0.008, +0.020]   | ≈ 0       |
+
+*Economic indicators carry the expected signs; the holiday effect is largely explained away by other covariates.*
+
+
+### Hierarchical Model Diagnostics
+* **Between-group SDs**:  
+  $\hat\sigma_\alpha \approx 0.32$ (stores),  
+  $\hat\sigma_\theta \approx 0.41$ (departments).  
+* **Convergence**: several parameters show $\hat R > 1.10$ and low $N_\text{eff}$; trace plots reveal funnel-like geometry → indicates need for **non-centred re-parameterisation** or stronger priors.
+* **Future work**: re-parametrisation (non-centred), stronger priors, or partial-pooling with Bayesian regularisation.
+
+## Discussion & Future Directions
+
+* **Economic indicators** with intuitive sign explain much of the variability in weekly sales.  
+* Hierarchical modeling is conceptually appropriate but numerically fragile; next steps:  
+  * switch to **non-centred parameterisation**,  
+  * conduct **prior-predictive checks**,  
+  * explore **regularised horseshoe** priors for sparse fixed effects.  
+* Incorporating explicit **time-series components** (week-of-year seasonality, AR lags) may further improve forecast accuracy.
+

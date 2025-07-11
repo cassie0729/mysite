@@ -1,0 +1,289 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I am a biostatistician & statistical programmer with hands‑on experienced in clinical-trial data workflows, Bayesian modeling, and high-performance statistical computing. My current work involves mapping raw study data to SDTM/ADaM, automating QC pipelines and validation checks in SAS & R.\nMy long‑term goal is to develop statistical methodology for high‑dimensional biomedical data, bridging rigorous theory with practical tools that empower scientists and clinicians. I am actively preparing to pursue a PhD in Biostatistics to deepen my expertise in Bayesian inference, adaptive trial design, and machine‑learning–driven biomarker discovery.\n\n\n\n\nM.S. Applied Statistics — University of Michigan, Ann Arbor\n• Course highlights: Bayesian Modeling ▪ Statistical Inference ▪ Survival Analysis ▪ Statistical Computing\nB.S. Mathematics (Analytics & Operations Research) — UC Davis\n• Course highlights: Linear Algebra ▪ Real & Numerical Analysis ▪ Probability ▪ Stochastic Processes ▪ Optimization ▪ Time-Series Analysis\nIndustry — Clinical-trial programming at EDETEK & Teva\n• SDTM/ADaM mapping & generation · TFL generation · automated QC in SAS/R · regulatory submissions support\nResearch — Bootstrap variance of PCA · Bayesian genetic-structure inference (HMC) · dPCA R-package development\n\n\n\n\n\n\nBayesian hierarchical & non‑parametric models\nHigh‑dimensional inference & variable selection\nAdaptive & platform clinical‑trial design\nMachine Learning & optimization\n\n\n\n\n\nSAS (Advanced, certified) · R (caret, ggplot2, rstan) · Python (Pandas, scikit-learn, PyMC3) · SQL · MATLAB · Git · LaTeX · Quarto/R Markdown"
+  },
+  {
+    "objectID": "about.html#snapshot",
+    "href": "about.html#snapshot",
+    "title": "About Me",
+    "section": "",
+    "text": "M.S. Applied Statistics — University of Michigan, Ann Arbor\n• Course highlights: Bayesian Modeling ▪ Statistical Inference ▪ Survival Analysis ▪ Statistical Computing\nB.S. Mathematics (Analytics & Operations Research) — UC Davis\n• Course highlights: Linear Algebra ▪ Real & Numerical Analysis ▪ Probability ▪ Stochastic Processes ▪ Optimization ▪ Time-Series Analysis\nIndustry — Clinical-trial programming at EDETEK & Teva\n• SDTM/ADaM mapping & generation · TFL generation · automated QC in SAS/R · regulatory submissions support\nResearch — Bootstrap variance of PCA · Bayesian genetic-structure inference (HMC) · dPCA R-package development"
+  },
+  {
+    "objectID": "about.html#current-interests",
+    "href": "about.html#current-interests",
+    "title": "About Me",
+    "section": "",
+    "text": "Bayesian hierarchical & non‑parametric models\nHigh‑dimensional inference & variable selection\nAdaptive & platform clinical‑trial design\nMachine Learning & optimization"
+  },
+  {
+    "objectID": "about.html#programming-skills",
+    "href": "about.html#programming-skills",
+    "title": "About Me",
+    "section": "",
+    "text": "SAS (Advanced, certified) · R (caret, ggplot2, rstan) · Python (Pandas, scikit-learn, PyMC3) · SQL · MATLAB · Git · LaTeX · Quarto/R Markdown"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "mysite",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Highlighted Projects",
+    "section": "",
+    "text": "Music Genre Classification via Machine Learning\n\n\n\n\n\n\n\n\n\nPredicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study\n\n\n\n\n\n\n\n\n\nBootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA\n\n\n\n\n\n\n\n\n\nDemand Forecasting via Bayesian Inference\n\n\n\n\n\n\n\n\n\nDemixed Principal Component Analysis (dPCA) in R\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/bootstrap.html",
+    "href": "projects/bootstrap.html",
+    "title": "Bootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA",
+    "section": "",
+    "text": "This page summarises my undergraduate research project on how well bootstrap methods recover confidence intervals for the leading eigenvalues of a covariance matrix in high‑dimensional Principal Component Analysis (PCA).\nWhen data are high‑dimensional, estimating uncertainty for the true eigenvalues \\(\\lambda_1,\\ldots,\\lambda_p\\) of the covariance matrix is notoriously hard. Conventional asymptotics break down once \\(p\\) is of the same order as \\(n\\). I explored whether non‑parametric bootstrap can still provide reliable 95 % confidence intervals (CIs) across a range of eigen‑decay rates parameterised by\n\\(\\lambda_j = j^{-\\beta},\\;\\; \\beta \\ge 0.\\)\nThe guiding questions were:\n\nHow does the empirical coverage of bootstrap CIs vary with \\(\\beta\\)?\nHow many bootstrap replications \\(B\\) and Monte‑Carlo repetitions \\(M\\) are needed for stable results?\nCan cloud resources speed up large‑scale simulations?"
+  },
+  {
+    "objectID": "projects/bootstrap.html#motivation",
+    "href": "projects/bootstrap.html#motivation",
+    "title": "Bootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA",
+    "section": "",
+    "text": "This page summarises my undergraduate research project on how well bootstrap methods recover confidence intervals for the leading eigenvalues of a covariance matrix in high‑dimensional Principal Component Analysis (PCA).\nWhen data are high‑dimensional, estimating uncertainty for the true eigenvalues \\(\\lambda_1,\\ldots,\\lambda_p\\) of the covariance matrix is notoriously hard. Conventional asymptotics break down once \\(p\\) is of the same order as \\(n\\). I explored whether non‑parametric bootstrap can still provide reliable 95 % confidence intervals (CIs) across a range of eigen‑decay rates parameterised by\n\\(\\lambda_j = j^{-\\beta},\\;\\; \\beta \\ge 0.\\)\nThe guiding questions were:\n\nHow does the empirical coverage of bootstrap CIs vary with \\(\\beta\\)?\nHow many bootstrap replications \\(B\\) and Monte‑Carlo repetitions \\(M\\) are needed for stable results?\nCan cloud resources speed up large‑scale simulations?"
+  },
+  {
+    "objectID": "projects/bootstrap.html#background",
+    "href": "projects/bootstrap.html#background",
+    "title": "Bootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA",
+    "section": "2 Background",
+    "text": "2 Background\n\n2.1 Principal Component Analysis (PCA)\nPCA projects the centred data matrix \\(Y_{n\\times p}\\) onto directions maximising variance. These directions are the eigenvectors of the sample covariance\n\\(S = \\frac{1}{n}\\sum_{i=1}^{n} Y_i Y_i^T.\\)\nRetaining only the top few components often captures most information.\n\n\n2.2 Bootstrap\nThe bootstrap assesses estimator variability by resampling with replacement from the observed data. Given an estimator \\(\\hat\\theta\\), the basic percentile CI is\n\\(\\bigl[\\hat\\theta- q_{1-\\alpha/2}(\\hat\\theta^* -\\hat\\theta),\\;\\hat\\theta- q_{\\alpha/2}(\\hat\\theta^* -\\hat\\theta)\\bigr],\\)\nwhere \\(q_p\\) denotes the \\(p\\)‑th quantile of the bootstrap distribution and \\(^*\\) marks a resampled statistic."
+  },
+  {
+    "objectID": "projects/bootstrap.html#simulation-design",
+    "href": "projects/bootstrap.html#simulation-design",
+    "title": "Bootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA",
+    "section": "3 Simulation design",
+    "text": "3 Simulation design\n## 1  Percentile-CI ----------------------------------------------\nboot_ci &lt;- function(B, X, lamdahat) {\n  n &lt;- nrow(X)\n  lamdahat.boot &lt;- numeric(B)\n  for (i in seq_len(B)) {\n    idx  &lt;- sample.int(n, replace = TRUE)\n    S_b  &lt;- cov(X[idx, ])\n    lamdahat.boot[i] &lt;- max(eigen(S_b, symmetric = TRUE, only.values = TRUE)$values)\n  }\n  diff &lt;- lamdahat.boot - lamdahat\n  ci   &lt;- quantile(diff, c(0.025, 0.975))\n  c(lamdahat - ci[2], lamdahat - ci[1])  \n}\n\n## 2  Monte-Carlo --------------------------------------------------\nbootstrap_eigen_coverage &lt;- function(S  = 5_000,  \n                                     n  = 1_000,   \n                                     p  = 30,     \n                                     B  = 2_000,   \n                                     true_lambda1 = 3) {\n  library(MASS)             \n  \n  lambda &lt;- c(3, 2, 1, rep(1, p - 3))\n  Sigma  &lt;- diag(lambda)\n  \n  covered &lt;- logical(S)\n  for (s in seq_len(S)) {\n    X &lt;- mvrnorm(n, rep(0, p), Sigma)\n    lamdahat &lt;- max(eigen(cov(X), symmetric = TRUE, only.values = TRUE)$values)\n    ci &lt;- boot_ci(B, X, lamdahat)\n    covered[s] &lt;- ci[1] &lt;= true_lambda1 && true_lambda1 &lt;= ci[2]\n  }\n  \n  mean(covered)             \n}\n\nData generation   Generate \\(M\\) independent datasets from \\(\\mathcal N\\bigl(0,\\operatorname{diag}(\\lambda_1,\\ldots,\\lambda_p)\\bigr)\\) with \\(n=1000\\), \\(p=30\\).\nBootstrap CIs     For each dataset and each \\(\\beta\\) on a user‑defined grid, run the percentile bootstrap with \\(B=2000\\) resamples to obtain a 95 % CI for \\(\\lambda_1\\).\nCoverage check    Record whether the true \\(\\lambda_1\\) falls inside its CI (1 = success, 0 = failure). Empirical coverage = mean of indicators."
+  },
+  {
+    "objectID": "projects/bootstrap.html#results",
+    "href": "projects/bootstrap.html#results",
+    "title": "Bootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA",
+    "section": "4 Results",
+    "text": "4 Results\nBelow are the coverage curves for three representative grids of \\(\\beta\\). The horizontal grey line marks the nominal 95 % level.\n\n4.1 Dense grid (\\(\\Delta\\beta = 0.1\\))\n\n\n\n\n\n\nFigure 1: Coverage when Δβ = 0.1, n = 1000, p = 30\n\n\n\n\n\n4.2 Medium grid (\\(\\Delta\\beta = 0.25\\))\n\n\n\n\n\n\nFigure 2: Coverage when Δβ = 0.25, n = 1000, p = 30\n\n\n\n\n\n4.3 Sparse grid (\\(\\Delta\\beta = 0.5\\))\n\n\n\n\n\n\nFigure 3: Coverage when Δβ = 0.5, n = 1000, p = 30"
+  },
+  {
+    "objectID": "projects/bootstrap.html#key-observations",
+    "href": "projects/bootstrap.html#key-observations",
+    "title": "Bootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA",
+    "section": "5 Key observations",
+    "text": "5 Key observations\n\nAs intuition suggests, larger \\(\\beta\\) (faster eigenvalue decay) helps—coverage climbs steadily and stabilises near the nominal line.\nAround \\(\\beta\\approx1.5\\) the method shows a dip, echoing the phase‑transition seen in random‑matrix theory.\nIncreasing the Monte‑Carlo repetitions \\(M\\) smooths the curves substantially."
+  },
+  {
+    "objectID": "projects/bootstrap.html#discussion",
+    "href": "projects/bootstrap.html#discussion",
+    "title": "Bootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA",
+    "section": "6 Discussion",
+    "text": "6 Discussion\nThe bootstrap remains surprisingly robust even when \\(p\\) is non‑negligible relative to \\(n\\), provided the spectrum is sufficiently steep. However, for flat spectra the usual percentile interval under‑covers. Possible fixes:\n\nStudentised or bias‑corrected & accelerated (BCa) bootstrap.\nEigen‑regularisation before resampling.\nVariance stabilisation via log‑eigenvalues."
+  },
+  {
+    "objectID": "projects/bootstrap.html#limitations-future-work",
+    "href": "projects/bootstrap.html#limitations-future-work",
+    "title": "Bootstrap Confidence Intervals for Eigenvalues in High-Dimensional PCA",
+    "section": "7 Limitations & future work",
+    "text": "7 Limitations & future work\n\nExtending to dependent data (e.g. time‑series) where resampling schemes must preserve structure.\nAnalytical comparison with Tracy–Widom based CIs.\nLeveraging cloud computing (e.g. on Galileo) to push \\(M, n, p\\) further without local bottlenecks."
+  },
+  {
+    "objectID": "projects/music.html",
+    "href": "projects/music.html",
+    "title": "Music Genre Classification via Machine Learning",
+    "section": "",
+    "text": "Streaming platforms publish tens of thousands of tracks daily, blurring genre boundaries and stretching human taggers thin. An automatic classifier that reliably separates Rock, Instrumental and Hip Hop can cut curation time and power downstream recommendation engines.:contentReferenceoaicite:0"
+  },
+  {
+    "objectID": "projects/music.html#motivation",
+    "href": "projects/music.html#motivation",
+    "title": "Music Genre Classification via Machine Learning",
+    "section": "",
+    "text": "Streaming platforms publish tens of thousands of tracks daily, blurring genre boundaries and stretching human taggers thin. An automatic classifier that reliably separates Rock, Instrumental and Hip Hop can cut curation time and power downstream recommendation engines.:contentReferenceoaicite:0"
+  },
+  {
+    "objectID": "projects/music.html#data",
+    "href": "projects/music.html#data",
+    "title": "Music Genre Classification via Machine Learning",
+    "section": "2 Data",
+    "text": "2 Data\n\nSource – Kaggle “Music Genre Classification” (Machine Hack Hackathon).\n\nObservations – 17999 tracks, already split 80 / 20 into train/test.\n\nPredictors – 16 audio-level features (e.g., danceability, energy, loudness, tempo, duration_ms) plus artist & track names.\n\nTarget – 11 original genres (0–10). We subset to classes 10 (Rock), 7 (Instrumental) and 5 (Hip Hop) for their distinct audio signatures and sample sizes (3374, 517 and 464 tracks respectively).\n\nAfter dropping rows with missing instrumentalness, key or popularity, the working dataset contains 4355 observations.\n\n2.1 Exploratory analysis (EDA)\n\nDistributions vary widely: energy and loudness are left-skewed; acousticness and instrumentalness are heavily right-skewed.\n\nRock dominates the sample (≈ 78 %), producing a class-imbalance risk.\n\nCorrelation heat-map highlights a strong positive link between energy and loudness and a negative link between each and acousticness.\nPCA confirms Instrumental music is separated mostly along PC1 (low energy, high acousticness), whereas Rock and Hip Hop overlap along intensity but differ along danceability/valence (PC2)."
+  },
+  {
+    "objectID": "projects/music.html#methods",
+    "href": "projects/music.html#methods",
+    "title": "Music Genre Classification via Machine Learning",
+    "section": "3 Methods",
+    "text": "3 Methods\n\n\n\n\n\n\n\n\nModel\nKey settings\nRationale\n\n\n\n\nK-Nearest Neighbours\nk = 5 (10-fold CV)\nNon-parametric, robust to non-Gaussian features\n\n\nRandom Forest\n25 trees, entropy split, depth ≤ 8\nHandles non-linear boundaries; decorrelates trees for stability\n\n\nAdaBoost\n25 estimators, learning-rate 0.8\nCombines shallow trees; useful for heterogeneous margins\n\n\n\nHyper-parameters were tuned with grid-search and stratified 80/20 train-test splits. All numeric predictors were z-standardised; categoricals were dummy-coded."
+  },
+  {
+    "objectID": "projects/music.html#results",
+    "href": "projects/music.html#results",
+    "title": "Music Genre Classification via Machine Learning",
+    "section": "4 Results",
+    "text": "4 Results\n\n\n\nMetric\nKNN\nRandom Forest\nAdaBoost\n\n\n\n\nOverall test accuracy\n95 %\n97.2 %\n91.9 %\n\n\nRock accuracy\n99 %\n99 %\n96 %\n\n\nInstrumental accuracy\n96 %\n95 %\n89 %\n\n\nHip Hop accuracy\n55 %\n52 %\n47 %\n\n\n\n\nRandom Forest yields the highest macro accuracy, but all models struggle on the minority Hip Hop class, reflecting the imbalance noted earlier.\n\n\n4.1 Feature importance (Random Forest)\nduration_ms dominates (&gt; 30 % of total importance), followed by energy, acousticness, danceability and speechiness – intuitive given that Instrumental tracks are typically shorter, quieter and more acoustic than Rock or Hip Hop."
+  },
+  {
+    "objectID": "projects/music.html#discussion-future-work",
+    "href": "projects/music.html#discussion-future-work",
+    "title": "Music Genre Classification via Machine Learning",
+    "section": "5 Discussion & Future Work",
+    "text": "5 Discussion & Future Work\n\nClass imbalance depresses Hip Hop recall; bootstrap or SMOTE resampling could redress this.\n\nModel simplicity vs. performance – KNN rivals Random Forest despite zero training, underscoring that a well-scaled feature space often suffices.\n\nOver-fitting guardrails – Adding PCA components as engineered features or pruning correlated variables could further stabilise ensembles.\n\nGranular genres – Extending the pipeline to the remaining eight genres will test scalability and reveal whether similarity in audio space (e.g., Rock vs. Metal) erodes accuracy."
+  },
+  {
+    "objectID": "projects/PreEclampsia.html",
+    "href": "projects/PreEclampsia.html",
+    "title": "Predicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study",
+    "section": "",
+    "text": "Pre-eclampsia (PE) is a hypertensive disorder that threatens maternal–fetal health worldwide.\nEarly, data-driven risk stratification allows obstetric teams to intensify surveillance and tailor interventions.\nUsing the Nulliparous Pregnancy Outcomes Study (nuMoM2b) cohort, we benchmarked five off-the-shelf classifiers—logistic regression, decision tree, random forest, AdaBoost, and a shallow artificial neural network (ANN)—to predict incident PE from routine first-trimester information. :contentReferenceoaicite:0"
+  },
+  {
+    "objectID": "projects/PreEclampsia.html#motivation",
+    "href": "projects/PreEclampsia.html#motivation",
+    "title": "Predicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study",
+    "section": "",
+    "text": "Pre-eclampsia (PE) is a hypertensive disorder that threatens maternal–fetal health worldwide.\nEarly, data-driven risk stratification allows obstetric teams to intensify surveillance and tailor interventions.\nUsing the Nulliparous Pregnancy Outcomes Study (nuMoM2b) cohort, we benchmarked five off-the-shelf classifiers—logistic regression, decision tree, random forest, AdaBoost, and a shallow artificial neural network (ANN)—to predict incident PE from routine first-trimester information. :contentReferenceoaicite:0"
+  },
+  {
+    "objectID": "projects/PreEclampsia.html#data",
+    "href": "projects/PreEclampsia.html#data",
+    "title": "Predicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study",
+    "section": "2 Data",
+    "text": "2 Data\n\n2.1 Cohort & Design\n\nSample 7626 nulliparous women enrolled at ≤ 14 weeks’ gestation.\n\nOutcome Binary indicator aggregated from six original PE severity categories (1 = any PE, 0 = none).\n\nPredictors 30 baseline variables spanning 12 themes:\n\n\n\n\n\n\n\n\nTheme (examples)\nCount\n\n\n\n\nDemographics (age, race, income)\n3\n\n\nPartner support (emotional, financial, delivery)\n4\n\n\nMental health (PSS-10, STAI-T, EPDS)\n3\n\n\nWorry scales (family, healthcare, symptoms)\n3\n\n\nClinical vitals (systolic / diastolic BP)\n2\n\n\nPhysical activity (exercise past 4 weeks)\n1\n\n\nMedical history (kidney, lupus, collagen vascular, Crohn’s, PCOS)\n5\n\n\nBirth history (born early)\n1\n\n\nFamily PE history\n1\n\n\nWeight (pre-pregnancy lbs)\n1\n\n\nDiscrimination score\n1\n\n\nRace dummies (after one-hot encoding)\n6\n\n\n\nMissing age rows (&lt; 0.3 %) were dropped; categorical levels were one-hot encoded; rare disease indicators were re-leveled to binary 0/1. Data were split 70 / 30 using stratified sampling."
+  },
+  {
+    "objectID": "projects/PreEclampsia.html#methods",
+    "href": "projects/PreEclampsia.html#methods",
+    "title": "Predicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study",
+    "section": "3 Methods",
+    "text": "3 Methods\nWe evaluated each classifier with 5-fold cross-validation on the training set, tuning key hyper-parameters by AUC:\n\n\n\n\n\n\n\nModel\nMain hyper-parameters (grid)\n\n\n\n\nLogistic regression\nnone (liblinear solver)\n\n\nDecision tree\nmax_depth ∈ {2, 3, 5, 6, 8}, max_features ∈ {3, 5, 10, 15}\n\n\nRandom forest\nn_estimators ∈ {10, 50, 100}, max_depth ∈ {5, 7, None}, bootstrap ∈ {True, False}\n\n\nAdaBoost\nn_estimators ∈ {50, 100, 200}, weak learner depth ∈ {1, 2}\n\n\nANN\ntwo hidden layers, nodes = 10 each; tuned batch_size ∈ {16, 32}, epochs ∈ {100, 200}\n\n\n\n\n3.1 Evaluation Metrics\nBecause only 23.5 % of pregnancies developed PE, we prioritised the F₁-score (harmonic mean of precision & recall), with precision–recall and ROC curves as secondary diagnostics."
+  },
+  {
+    "objectID": "projects/PreEclampsia.html#results",
+    "href": "projects/PreEclampsia.html#results",
+    "title": "Predicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study",
+    "section": "4 Results",
+    "text": "4 Results\n\n4.1 Overall Performance\n\n\n\n\n\n\n\n\n\n\nModel\nPrecision\nRecall\nF₁\nNotes\n\n\n\n\nLogistic regression\n0.342\n0.598\n0.435\nSimple, interpretable\n\n\nDecision tree\n0.295\n0.711\n0.418\nDepth = 5, 15 features\n\n\nRandom forest\n0.330\n0.665\n0.441\n50 trees, depth = 7\n\n\nAdaBoost\n0.238\n0.998\n0.383\n100 stumps; best recall\n\n\nANN\n0.278\n0.776\n0.409\n2 × 10 nodes, 200 epochs\n\n\n\nAlthough the random-forest model achieved an F₁-score of 0.441, beating logistic regression (F₁ = 0.435) by 0.006 (0.6 percentage-points), this gap is smaller than one cross-validation standard error. In practical terms, the two models are statistically indistinguishable on this dataset.\n\nInterpretation.\n\nRandom forest captures complex, non-linear interactions and therefore has lower bias than logistic regression.\n\nHowever, with only ~5 k training records and 30 predictors, that extra flexibility adds variance without yielding a meaningful boost in out-of-sample F₁.\n\nThe near-tie underscores a common lesson for modest-sized tabular data: parsimonious, easily interpretable models often rival more complex ensembles once uncertainty is taken into account.\n\n\nTherefore, unless interpretability is secondary and computational cost negligible, logistic regression (or a lightly regularised variant) remains the more pragmatic baseline.\n\n\n4.2 Key Predictors\n\n4.2.1 Tree-based feature importance consistently selected:\n\nPre-pregnancy weight (lbs)\n\nSystolic blood pressure (mm Hg)\n\nDiastolic blood pressure (mm Hg)\n\nAge (years)\n\nSTAI-T anxiety score\n\nPSS stress score\n\n\n\n4.2.2 Effect sizes (logistic regression)\nHolding the other 29 baseline variables constant, the fitted logistic model yielded two notably precise effect estimates:\n\n\n\n\n\n\n\n\n\nPredictor\nPer-unit odds ratio (OR)\n95 % CI\nPractical interpretation\n\n\n\n\nPre-pregnancy weight (lb)\n1.0054\n1.004 – 1.007\nEach 10 lb gain raises the odds of PE by ≈ 5 %.\n\n\nSystolic blood pressure (mm Hg)\n1.019\n1.01 – 1.03\nEach 10 mm Hg rise raises the odds by ≈ 22 %.\n\n\n\nOn the 30 % hold-out test set the same model achieved precision = 0.342, recall = 0.598, and F₁ = 0.435.\nThus, while weight and blood pressure provide statistically robust signals (p &lt; 0.001), their modest incremental odds underscore that early-pregnancy PE risk is multifactorial, limiting overall discrimination when using first-trimester data alone."
+  },
+  {
+    "objectID": "projects/PreEclampsia.html#discussion",
+    "href": "projects/PreEclampsia.html#discussion",
+    "title": "Predicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study",
+    "section": "5 Discussion",
+    "text": "5 Discussion\n\nClinical insight: Both physiological (weight, BP) and psychological (stress, anxiety) domains contribute materially to PE risk, aligning with literature on cardiometabolic pathways.\n\nModel choice: Given comparable F₁ and superior interpretability, penalised logistic regression or monotonic gradient-boosting could offer a pragmatic middle ground.\n\nLimitations: Class imbalance capped F₁ ceilings; advanced re-sampling (e.g., SMOTE) or cost-sensitive loss could help.\n– Some variables show implausible zeros (e.g., age, income); future work should scrutinise and impute rather than drop.\n– External validity is untested; replication on multiparous or broader populations is needed."
+  },
+  {
+    "objectID": "projects/hmc.html",
+    "href": "projects/hmc.html",
+    "title": "Demand Forecasting via Bayesian Inference",
+    "section": "",
+    "text": "Demand forecasting underpins inventory planning, pricing, and promotion in retail.\nAccurate forecasts help Walmart maintain optimal stock levels and improve cash-flow management.\nBecause weekly sales depend on many interacting factors and exhibit heavy right-skew, we adopt Bayesian modelling to:\n\nquantify parameter uncertainty;\nincorporate hierarchical (store / department) structure; and\n\nobtain intuitive posterior summaries for decision-making."
+  },
+  {
+    "objectID": "projects/hmc.html#motivation",
+    "href": "projects/hmc.html#motivation",
+    "title": "Demand Forecasting via Bayesian Inference",
+    "section": "",
+    "text": "Demand forecasting underpins inventory planning, pricing, and promotion in retail.\nAccurate forecasts help Walmart maintain optimal stock levels and improve cash-flow management.\nBecause weekly sales depend on many interacting factors and exhibit heavy right-skew, we adopt Bayesian modelling to:\n\nquantify parameter uncertainty;\nincorporate hierarchical (store / department) structure; and\n\nobtain intuitive posterior summaries for decision-making."
+  },
+  {
+    "objectID": "projects/hmc.html#data",
+    "href": "projects/hmc.html#data",
+    "title": "Demand Forecasting via Bayesian Inference",
+    "section": "2 Data",
+    "text": "2 Data\nWe merge three publicly available Kaggle datasets[^kaggle]:\n\nStore: anonymous metadata (Type A/B/C, Size).\n\nFeatures: weekly covariates 2010-02-05 → 2012-11-01 (Temperature, Fuel Price, CPI, Unemployment, five Markdown channels, IsHoliday).\n\nTrain: 421570 observations of weekly department-level sales.\n\nAfter dropping the five Markdown variables (&gt; 60 % missing), the final training set contains:\nKey characteristics:\n\n\n\n\n\n\n\n\nVariable\nType\nNote\n\n\n\n\nWeekly_Sales\nnumeric\nright-skewed target\n\n\nStore, Dept\ncategorical\n45 stores; 81 departments\n\n\nIsHoliday\nbinary\nmajor US holidays\n\n\nTemperature\nnumeric\n°F, weekly average\n\n\nFuel_Price\nnumeric\nregional cost per gallon\n\n\nCPI, Unemployment\nnumeric\neconomic indicators\n\n\nSize\nnumeric\nstore floor area (ft²)\n\n\nType\ncategorical\nA (large) / B / C (small)\n\n\n\nExploratory highlight\n\nSales are highest for Type A stores and during holiday weeks.\n\nLarger Size correlates positively with sales, while higher Unemployment, Fuel_Price, and CPI show negative associations.\n\nSales distribution is heavily right-tailed; ∼25 % of observations are near $0."
+  },
+  {
+    "objectID": "projects/hmc.html#methodology",
+    "href": "projects/hmc.html#methodology",
+    "title": "Demand Forecasting via Bayesian Inference",
+    "section": "3 Methodology",
+    "text": "3 Methodology\n\n3.1 Bayesian Linear Regression\nLet\n\\[\ny_n \\;=\\;\n\\beta_0 + \\beta_1 \\text{IsHoliday}_n + \\beta_2 \\text{Unemployment}_n\n+ \\beta_3 \\text{Temperature}_n + \\beta_4 \\text{FuelPrice}_n\n+ \\beta_5 \\text{CPI}_n + \\beta_6 \\text{Size}_n + \\varepsilon_n,\n\\qquad\n\\varepsilon_n \\sim \\mathcal N\\!\\bigl(0,\\sigma^2\\bigr).\n\\]\nAll numeric predictors are standardised.\nDiffuse but proper priors are used:\n\n\n\n\n\n\n\nParameter\nPrior\n\n\n\n\n\\(\\beta_k\\)\n\\(\\mathcal N\\!\\bigl(\\hat\\beta_k^{\\text{OLS}},\\,10^{12}\\bigr)\\)\n\n\n\\(\\sigma\\)\nHalf-Cauchy\\((0,25)\\)\n\n\n\nPosterior sampling is performed in PyMC 3 with NUTS (adaptive HMC).\n\n\n3.2 Hierarchical Normal Model\nTo capture store- and department-level heterogeneity we extend to\n\\[\ny_{ij} \\;=\\;\n\\beta_0 + \\beta_1 \\text{IsHoliday}_{ij} + \\dots + \\beta_6 \\text{Size}_{ij}\n+\\alpha_i + \\theta_j + \\varepsilon_{ij},\n\\]\nwith \\(\\alpha_i \\sim \\mathcal N(0,\\sigma_\\alpha^2), \\;\n      \\theta_j \\sim \\mathcal N(0,\\sigma_\\theta^2)\\)\nand Half-Cauchy hyper-priors on variances.\nFour Stan NUTS chains (2 000 warm-up + 2 000 sampling iterations each) were attempted."
+  },
+  {
+    "objectID": "projects/hmc.html#results",
+    "href": "projects/hmc.html#results",
+    "title": "Demand Forecasting via Bayesian Inference",
+    "section": "4 Results",
+    "text": "4 Results\n\n4.1 Linear Model Posterior\n\nSignificant negative effects: Unemployment, Fuel_Price, CPI.\n\nPositive effects: Temperature, Size.\n\nIsHoliday posterior includes 0, suggesting holiday uplift is explained by other covariates.\n\n\n\n\nPredictor\nPosterior Mean\n95 % HDI\nDirection\n\n\n\n\nUnemployment\n–0.121\n[–0.139, –0.103]\n↓\n\n\nFuel Price\n–0.087\n[–0.099, –0.075]\n↓\n\n\nCPI\n–0.051\n[–0.063, –0.040]\n↓\n\n\nTemperature\n+0.034\n[+0.023, +0.045]\n↑\n\n\nSize\n+0.217\n[+0.205, +0.229]\n↑\n\n\nIsHoliday\n+0.006\n[–0.008, +0.020]\n≈ 0\n\n\n\nEconomic indicators carry the expected signs; the holiday effect is largely explained away by other covariates.\n\n\n4.2 Hierarchical Model Diagnostics\n\nBetween-group SDs:\n\\(\\hat\\sigma_\\alpha \\approx 0.32\\) (stores),\n\\(\\hat\\sigma_\\theta \\approx 0.41\\) (departments).\n\nConvergence: several parameters show \\(\\hat R &gt; 1.10\\) and low \\(N_\\text{eff}\\); trace plots reveal funnel-like geometry → indicates need for non-centred re-parameterisation or stronger priors.\nFuture work: re-parametrisation (non-centred), stronger priors, or partial-pooling with Bayesian regularisation."
+  },
+  {
+    "objectID": "projects/hmc.html#discussion-future-directions",
+    "href": "projects/hmc.html#discussion-future-directions",
+    "title": "Demand Forecasting via Bayesian Inference",
+    "section": "5 Discussion & Future Directions",
+    "text": "5 Discussion & Future Directions\n\nEconomic indicators with intuitive sign explain much of the variability in weekly sales.\n\nHierarchical modeling is conceptually appropriate but numerically fragile; next steps:\n\nswitch to non-centred parameterisation,\n\nconduct prior-predictive checks,\n\nexplore regularised horseshoe priors for sparse fixed effects.\n\n\nIncorporating explicit time-series components (week-of-year seasonality, AR lags) may further improve forecast accuracy."
+  },
+  {
+    "objectID": "projects/dpca.html",
+    "href": "projects/dpca.html",
+    "title": "Demixed Principal Component Analysis (dPCA) in R",
+    "section": "",
+    "text": "Demixed Principal Component Analysis (dPCA) extends classical PCA by separating (demixing) the variance in neural population activity that is attributable to different task parameters—typically time, stimulus and decision—while still preserving maximal variance overall. Our team implemented dPCA in R and released it as the demixpca package."
+  },
+  {
+    "objectID": "projects/dpca.html#overview",
+    "href": "projects/dpca.html#overview",
+    "title": "Demixed Principal Component Analysis (dPCA) in R",
+    "section": "",
+    "text": "Demixed Principal Component Analysis (dPCA) extends classical PCA by separating (demixing) the variance in neural population activity that is attributable to different task parameters—typically time, stimulus and decision—while still preserving maximal variance overall. Our team implemented dPCA in R and released it as the demixpca package."
+  },
+  {
+    "objectID": "projects/dpca.html#motivation",
+    "href": "projects/dpca.html#motivation",
+    "title": "Demixed Principal Component Analysis (dPCA) in R",
+    "section": "Motivation",
+    "text": "Motivation\nNeurons in higher cortical areas often show mixed selectivity: a single neuron may respond to multiple sensory and motor variables, obscuring the underlying computation.\ndPCA addresses this by projecting population responses onto low-dimensional axes that are aligned with individual task factors, facilitating interpretation and visualization."
+  },
+  {
+    "objectID": "projects/dpca.html#methodology",
+    "href": "projects/dpca.html#methodology",
+    "title": "Demixed Principal Component Analysis (dPCA) in R",
+    "section": "Methodology",
+    "text": "Methodology\n\n1 Marginalization\nFor each neuron we decompose its trial-averaged firing matrix \\(X_{t s d k}\\) into marginal means (overall, time-only, stimulus-only, decision-only, and their interactions) and a residual term. Summing these marginalizations reconstructs the original data.\n\n\n2 Loss Function\ndPCA seeks encoder/decoder pairs \\((P_\\phi, F_\\phi)\\) for every marginalization \\(\\phi\\) by minimizing\n\\(L_{\\phi} \\;=\\; \\left\\|X_{\\phi} - P_{\\phi}F_{\\phi}X\\right\\|_{F}^{2}\n          \\;+\\; \\lambda\\,\\left\\|P_{\\phi}F_{\\phi}\\right\\|_{F}^{2}\\)\nwhere \\(\\lambda\\) is a ridge penalty to reduce over-fitting.\n\n\n3 Reduced-Rank Regression Solver\ndPCA fits each marginal matrix \\(X_\\phi\\) by solving\n\\(min_{P_\\phi,F_\\phi}\\;\\|X_\\phi - P_\\phi F_\\phi X\\|_F^{2}\n\\;+\\;\n\\lambda\\,\\|P_\\phi F_\\phi\\|_F^{2}\\)\nwhich is a Reduced-Rank Regression (RRR) problem.\nThe package implements three low-rank solvers, each with different speed/accuracy trade-offs:\n\n\n\n\n\n\n\n\n\n\nSolver\nCore idea\nSpeed & Scalability\nAccuracy & Stability\nTypical use-case\n\n\n\n\nRandomized SVD (RSVD)\nApproximate SVD via random projections; computes only the leading q singular vectors\nFastest for large matrices (e.g. 3.76 s vs 6.97 s for a \\(2{\\times}100{\\times}3{\\times}800\\) example)\nSlightly lower precision for very high rank; repeat with multiple sketches to average out noise\nExploratory work on big data where small errors are acceptable\n\n\nFull SVD\nExact singular value decomposition\nMedium; 2–3 times slower than RSVD on large matrices\nHighest accuracy; deterministic\nWhen numeric precision is critical or results feed into further quantitative analysis\n\n\nEconomy QR → SVD\nQR factorization first, then SVD on the R factor\nHighly sensitive to column count: very slow when \\(D\\!\\times\\!T\\!\\times\\!S\\) is large (54 s vs 3–4 s in a \\(4{\\times}500{\\times}6{\\times}100\\) test)\nVery stable for “tall-and-skinny” matrices\nDatasets with many neurons but few task conditions (rows ≫ columns)\n\n\n\nPractical guidelines\n\nNeed for speed? Large N or \\(D\\!\\times\\!T\\!\\times\\!S\\) → choose RSVD.\n\nNeed for precision? High effective rank or downstream quantitative use → choose SVD.\n\nTall-and-skinny? Few task variables, many neurons → choose QR.\n\nImplementation highlights\n\nCompute the ridge-regularised matrix\n\\(A_{\\text{RR}} \\;=\\; X_\\phi X^\\top\n\\bigl(X X^\\top + \\lambda I\\bigr)^{-1}\\)\nApply RSVD / SVD / QR to obtain a rank-q approximation of \\(A_{\\text{RR}}\\).\n\nFactor \\(A_{\\text{RR}}\\approx P_\\phi F_\\phi\\):\n\nEncoder \\(P_\\phi =\\) left singular vectors\n\nDecoder \\(F_\\phi =\\) singular values × right singular vectors \\(^\\top\\)\n\n\nSelect the solver via the method = argument in dpca():\ndpca(X, margins = c(\"decision\", \"time\", \"stimulus\"),\n     n_comp = c(3, 3, 3),\n     method = \"rsvd\")  # or \"svd\", \"qr\""
+  },
+  {
+    "objectID": "projects/dpca.html#implementation",
+    "href": "projects/dpca.html#implementation",
+    "title": "Demixed Principal Component Analysis (dPCA) in R",
+    "section": "Implementation",
+    "text": "Implementation\n\nInstallation\n# install devtools first if needed\ninstall.packages(\"devtools\")\n\n# install the development version of demixpca\ndevtools::install_github(\"jhgoblue/demixpca\")"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Biostatistician & Statistical Programmer · Bayesian Inference · High-dimensional Data Analysis · Clinical Trials"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Welcome!",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: chennianlin26@163.com\nPhone: +1 (530) 220-4570"
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Welcome!",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nBayesian hierarchical modeling & MCMC/HMC\n\nHigh-dimensional data analysis & PCA\n\nClinical trials & adaptive design\n\nMachine learning\n\nStatistical computing"
+  },
+  {
+    "objectID": "index.html#highlighted-projects",
+    "href": "index.html#highlighted-projects",
+    "title": "Welcome!",
+    "section": "Highlighted Projects",
+    "text": "Highlighted Projects\nSee Projects"
+  }
+]

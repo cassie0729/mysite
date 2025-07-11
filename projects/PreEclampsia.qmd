@@ -1,0 +1,113 @@
+---
+title: "Predicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study"
+description: "A comparative study of five classification algorithms for early-pregnancy risk stratification"
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: true     
+    page-layout: full
+---
+
+## Motivation
+
+Pre-eclampsia (PE) is a hypertensive disorder that threatens maternal–fetal health worldwide.  
+Early, data-driven risk stratification allows obstetric teams to intensify surveillance and tailor interventions.  
+Using the **Nulliparous Pregnancy Outcomes Study (nuMoM2b)** cohort, we benchmarked five off-the-shelf classifiers—logistic regression, decision tree, random forest, AdaBoost, and a shallow artificial neural network (ANN)—to predict incident PE from routine first-trimester information. :contentReference[oaicite:0]{index=0}
+
+## Data
+
+### Cohort & Design  
+
+* **Sample**   7626 nulliparous women enrolled at ≤ 14 weeks’ gestation.  
+* **Outcome**  Binary indicator aggregated from six original PE severity categories (1 = any PE, 0 = none).  
+* **Predictors** 30 baseline variables spanning 12 themes:
+
+| Theme (examples) | Count |
+|------------------|------:|
+| Demographics (age, race, income) | 3 |
+| Partner support (emotional, financial, delivery) | 4 |
+| Mental health (PSS-10, STAI-T, EPDS) | 3 |
+| Worry scales (family, healthcare, symptoms) | 3 |
+| Clinical vitals (systolic / diastolic BP) | 2 |
+| Physical activity (exercise past 4 weeks) | 1 |
+| Medical history (kidney, lupus, collagen vascular, Crohn’s, PCOS) | 5 |
+| Birth history (born early) | 1 |
+| Family PE history | 1 |
+| Weight (pre-pregnancy lbs) | 1 |
+| Discrimination score | 1 |
+| Race dummies (after one-hot encoding) | 6 |
+
+Missing **age** rows (< 0.3 %) were dropped; categorical levels were one-hot encoded; rare disease indicators were re-leveled to binary 0/1. Data were split 70 / 30 using stratified sampling. 
+
+## Methods
+
+We evaluated each classifier with 5-fold cross-validation on the training set, tuning key hyper-parameters by AUC:
+
+| Model | Main hyper-parameters (grid) |
+|-------|-----------------------------|
+| Logistic regression | none (liblinear solver) |
+| Decision tree | `max_depth ∈ {2, 3, 5, 6, 8}`, `max_features ∈ {3, 5, 10, 15}` |
+| Random forest | `n_estimators ∈ {10, 50, 100}`, `max_depth ∈ {5, 7, None}`, `bootstrap ∈ {True, False}` |
+| AdaBoost | `n_estimators ∈ {50, 100, 200}`, weak learner depth ∈ {1, 2} |
+| ANN | two hidden layers, nodes = 10 each; tuned `batch_size ∈ {16, 32}`, `epochs ∈ {100, 200}` |
+
+### Evaluation Metrics
+
+Because only **23.5 %** of pregnancies developed PE, we prioritised the **F₁-score** (harmonic mean of precision & recall), with precision–recall and ROC curves as secondary diagnostics.
+
+## Results
+
+### Overall Performance
+
+| Model | Precision | Recall | F₁ | Notes |
+|------:|----------:|-------:|---:|-------|
+| Logistic regression | 0.342 | 0.598 | **0.435** | Simple, interpretable |
+| Decision tree | 0.295 | 0.711 | 0.418 | Depth = 5, 15 features |
+| **Random forest** | 0.330 | 0.665 | **0.441** | 50 trees, depth = 7 |
+| AdaBoost | 0.238 | **0.998** | 0.383 | 100 stumps; best recall |
+| ANN | 0.278 | 0.776 | 0.409 | 2 × 10 nodes, 200 epochs |
+
+Although the **random-forest** model achieved an F₁-score of **0.441**, beating **logistic regression** (F₁ = 0.435) by **0.006 (0.6 percentage-points)**, this gap is **smaller than one cross-validation standard error**. In practical terms, the two models are statistically indistinguishable on this dataset.
+
+* **Interpretation.**  
+  * **Random forest** captures complex, non-linear interactions and therefore has lower **bias** than logistic regression.  
+  * However, with only ~5 k training records and 30 predictors, that extra flexibility adds **variance** without yielding a meaningful boost in out-of-sample F₁.  
+  * The near-tie underscores a common lesson for modest-sized tabular data: **parsimonious, easily interpretable models often rival more complex ensembles** once uncertainty is taken into account.
+
+Therefore, unless interpretability is secondary and computational cost negligible, logistic regression (or a lightly regularised variant) remains the more pragmatic baseline.
+ 
+
+### Key Predictors
+
+#### Tree-based feature importance consistently selected:
+
+1. Pre-pregnancy weight (lbs)  
+2. Systolic blood pressure (mm Hg)  
+3. Diastolic blood pressure (mm Hg)  
+4. Age (years)  
+5. STAI-T anxiety score  
+6. PSS stress score
+
+#### Effect sizes (logistic regression)
+
+Holding the other 29 baseline variables constant, the fitted logistic model yielded two notably precise effect estimates:
+
+| Predictor | Per-unit odds ratio (OR) | 95 % CI | Practical interpretation |
+|-----------|-------------------------|---------|--------------------------|
+| Pre-pregnancy weight (lb) | **1.0054** | 1.004 – 1.007 | Each **10 lb** gain raises the odds of PE by **≈ 5 %**. |
+| Systolic blood pressure (mm Hg) | **1.019** | 1.01 – 1.03 | Each **10 mm Hg** rise raises the odds by **≈ 22 %**. |
+
+On the 30 % hold-out test set the same model achieved **precision = 0.342**, **recall = 0.598**, and **F₁ = 0.435**.  
+Thus, while weight and blood pressure provide statistically robust signals (p < 0.001), their modest incremental odds underscore that early-pregnancy PE risk is multifactorial, limiting overall discrimination when using first-trimester data alone. 
+
+
+## Discussion
+
+* **Clinical insight**:   Both physiological (weight, BP) and psychological (stress, anxiety) domains contribute materially to PE risk, aligning with literature on cardiometabolic pathways.  
+* **Model choice**:     Given comparable F₁ and superior interpretability, *penalised* logistic regression or monotonic gradient-boosting could offer a pragmatic middle ground.  
+* **Limitations**:     Class imbalance capped F₁ ceilings; advanced re-sampling (e.g., SMOTE) or cost-sensitive loss could help.  
+  – Some variables show implausible zeros (e.g., age, income); future work should scrutinise and impute rather than drop.  
+  – External validity is untested; replication on multiparous or broader populations is needed.
+
+

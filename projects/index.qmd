@@ -1,0 +1,14 @@
+---
+title: "Highlighted Projects"
+format: html
+
+listing:
+  type: grid            # 网格卡片，最通用
+  contents: .    
+  sort: "date desc"     # 可选：按日期倒序
+  grid-columns: 2       
+  fields:               # 列出要显示的 front-matter 键
+    - title
+---
+
+

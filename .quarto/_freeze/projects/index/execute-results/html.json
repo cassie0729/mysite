@@ -1,0 +1,12 @@
+{
+  "hash": "26cc4bfe488d39f3620eb6ac7f6fc0ef",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Highlighted Projects\"\nformat: html\n---\n\n```{listing}\ntype: default\ncontents: projects\nlayout: horizontal\nfields:\n  title: \"{{title}}\"\n  description: \"{{subtitle}}\"\n  link: \"{{url}}\"\n```\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

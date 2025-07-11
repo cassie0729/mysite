@@ -1,0 +1,43 @@
+---
+title: "About Me"
+format:
+  html:
+    toc: false         
+---
+
+# Hi, I'm **Nianlin (Cassie) Chen** 👋
+
+I am a **biostatistician & statistical programmer** with hands‑on experienced in clinical-trial data workflows, Bayesian modeling, and high-performance statistical computing. My current work involves mapping raw study data to **SDTM/ADaM**, automating QC pipelines and validation checks in **SAS & R**.
+
+My long‑term goal is to develop **statistical methodology for high‑dimensional biomedical data**, bridging rigorous theory with practical tools that empower scientists and clinicians. I am actively preparing to pursue a **PhD in Biostatistics** to deepen my expertise in Bayesian inference, adaptive trial design, and machine‑learning–driven biomarker discovery.
+
+---
+
+## Snapshot
+
+- **M.S. Applied Statistics** — *University of Michigan, Ann Arbor*  
+  • Course highlights: Bayesian Modeling ▪ Statistical Inference ▪ Survival Analysis ▪ Statistical Computing  
+
+- **B.S. Mathematics (Analytics & Operations Research)** — *UC Davis*  
+  • Course highlights: Linear Algebra ▪ Real & Numerical Analysis ▪ Probability ▪ Stochastic Processes ▪ Optimization ▪ Time-Series Analysis  
+
+- **Industry** — Clinical-trial programming at EDETEK & Teva  
+  • SDTM/ADaM mapping & generation · TFL generation · automated QC in SAS/R · regulatory submissions support  
+
+- **Research** — Bootstrap variance of PCA · Bayesian genetic-structure inference (HMC) · *dPCA* R-package development  
+
+
+---
+
+## Current Interests  
+* Bayesian hierarchical & non‑parametric models
+* High‑dimensional inference & variable selection
+* Adaptive & platform clinical‑trial design
+* Machine Learning & optimization
+
+---
+
+## Programming Skills  
+`SAS` (Advanced, certified) · `R` (caret, ggplot2, rstan) · `Python` (Pandas, scikit-learn, PyMC3) · `SQL` · MATLAB · Git · LaTeX · Quarto/R Markdown 
+
+---

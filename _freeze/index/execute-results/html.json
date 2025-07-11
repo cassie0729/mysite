@@ -1,0 +1,12 @@
+{
+  "hash": "6025c0b3a8f1a7d71b2b75ea7f5d363a",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Welcome!\"\npage-layout: full      # 宽屏；可删掉留默认\nformat:\n  html:\n    toc: false\n    css: styles.css\nfreeze: auto            # ← 仅在内容无改动时跳过渲染\n---\n\n<div class=\"text-center my-5\">\n  <img src=\"images/avatar.png\" alt=\"Avatar\" style=\"width:120px;border-radius:50%;box-shadow:0 0 8px rgba(0,0,0,0.15);\" />\n  <h1 class=\"mt-3\"><strong>Nianlin (Cassie) Chen</strong></h1>\n  <p class=\"lead\">\n    Biostatistician &amp; Statistical Programmer · Bayesian Inference · High-dimensional Data Analysis · Clinical Trials\n  </p>\n</div>\n\n---\n\n## Contact\n- **Email:** <chennianlin26@163.com>  \n- **Phone:** +1&nbsp;(530)&nbsp;220-4570  \n\n---\n\n## Research Interests\n- Bayesian hierarchical modeling &amp; MCMC/HMC  \n- High-dimensional data analysis &amp; PCA  \n- Clinical trials &amp; adaptive design  \n- Machine learning  \n- Statistical computing  \n\n---\n\n## Highlighted Projects\n\n```{listing}\ntype: grid\ncontents: projects/*.qmd     # 抓取 projects 目录下所有 .qmd\nsort: \"date desc\"\ngrid-columns: 3              # 三列横排\nfields:\n  - title\n  - subtitle\n  - url\n```\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
