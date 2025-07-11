@@ -12,7 +12,7 @@ freeze: auto            # ← 仅在内容无改动时跳过渲染
   <img src="images/avatar.png" alt="Avatar" style="width:120px;border-radius:50%;box-shadow:0 0 8px rgba(0,0,0,0.15);" />
   <h1 class="mt-3"><strong>Nianlin (Cassie) Chen</strong></h1>
   <p class="lead">
-    Biostatistician &amp; Statistical Programmer · Bayesian Inference · High-dimensional Data Analysis · Clinical Trials
+    Bayesian Inference · High-dimensional Data Analysis · Clinical Trials · Statistical Computing
   </p>
 </div>
 
