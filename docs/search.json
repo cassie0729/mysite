@@ -144,14 +144,14 @@
     "href": "projects/PreEclampsia.html",
     "title": "Predicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study",
     "section": "",
-    "text": "Pre-eclampsia (PE) is a hypertensive disorder that threatens maternal–fetal health worldwide.\nEarly, data-driven risk stratification allows obstetric teams to intensify surveillance and tailor interventions.\nUsing the Nulliparous Pregnancy Outcomes Study (nuMoM2b) cohort, we benchmarked five off-the-shelf classifiers—logistic regression, decision tree, random forest, AdaBoost, and a shallow artificial neural network (ANN)—to predict incident PE from routine first-trimester information. :contentReferenceoaicite:0"
+    "text": "Pre-eclampsia (PE) is a hypertensive disorder that threatens maternal–fetal health worldwide.\nEarly, data-driven risk stratification allows obstetric teams to intensify surveillance and tailor interventions.\nUsing the Nulliparous Pregnancy Outcomes Study (nuMoM2b) cohort, we benchmarked five off-the-shelf classifiers—logistic regression, decision tree, random forest, AdaBoost, and a shallow artificial neural network (ANN)—to predict incident PE from routine first-trimester information."
   },
   {
     "objectID": "projects/PreEclampsia.html#motivation",
     "href": "projects/PreEclampsia.html#motivation",
     "title": "Predicting Pre-Eclampsia in Nulliparous Pregnancy Outcomes Study",
     "section": "",
-    "text": "Pre-eclampsia (PE) is a hypertensive disorder that threatens maternal–fetal health worldwide.\nEarly, data-driven risk stratification allows obstetric teams to intensify surveillance and tailor interventions.\nUsing the Nulliparous Pregnancy Outcomes Study (nuMoM2b) cohort, we benchmarked five off-the-shelf classifiers—logistic regression, decision tree, random forest, AdaBoost, and a shallow artificial neural network (ANN)—to predict incident PE from routine first-trimester information. :contentReferenceoaicite:0"
+    "text": "Pre-eclampsia (PE) is a hypertensive disorder that threatens maternal–fetal health worldwide.\nEarly, data-driven risk stratification allows obstetric teams to intensify surveillance and tailor interventions.\nUsing the Nulliparous Pregnancy Outcomes Study (nuMoM2b) cohort, we benchmarked five off-the-shelf classifiers—logistic regression, decision tree, random forest, AdaBoost, and a shallow artificial neural network (ANN)—to predict incident PE from routine first-trimester information."
   },
   {
     "objectID": "projects/PreEclampsia.html#data",

@@ -13,7 +13,7 @@ format:
 
 Pre-eclampsia (PE) is a hypertensive disorder that threatens maternal–fetal health worldwide.  
 Early, data-driven risk stratification allows obstetric teams to intensify surveillance and tailor interventions.  
-Using the **Nulliparous Pregnancy Outcomes Study (nuMoM2b)** cohort, we benchmarked five off-the-shelf classifiers—logistic regression, decision tree, random forest, AdaBoost, and a shallow artificial neural network (ANN)—to predict incident PE from routine first-trimester information. :contentReference[oaicite:0]{index=0}
+Using the **Nulliparous Pregnancy Outcomes Study (nuMoM2b)** cohort, we benchmarked five off-the-shelf classifiers—logistic regression, decision tree, random forest, AdaBoost, and a shallow artificial neural network (ANN)—to predict incident PE from routine first-trimester information.
 
 ## Data
 

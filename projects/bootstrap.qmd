@@ -120,6 +120,5 @@ The bootstrap remains surprisingly robust even when $p$ is non‑negligible rela
 * Analytical comparison with Tracy–Widom based CIs.
 * Leveraging **cloud computing** (e.g. on Galileo) to push $M, n, p$ further without local bottlenecks.
 
----
 
 

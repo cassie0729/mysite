@@ -40,4 +40,3 @@ My long‑term goal is to develop **statistical methodology for high‑dimension
 ## Programming Skills  
 `SAS` (Advanced, certified) · `R` (caret, ggplot2, rstan) · `Python` (Pandas, scikit-learn, PyMC3) · `SQL` · MATLAB · Git · LaTeX · Quarto/R Markdown 
 
----

@@ -61,5 +61,4 @@ Hyper-parameters were tuned with grid-search and stratified 80/20 train-test spl
 * **Over-fitting guardrails** – Adding PCA components as engineered features or pruning correlated variables could further stabilise ensembles.  
 * **Granular genres** – Extending the pipeline to the remaining eight genres will test scalability and reveal whether similarity in audio space (e.g., Rock vs. Metal) erodes accuracy.
 
----
 
