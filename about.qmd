@@ -5,7 +5,8 @@ format:
     toc: false         
 ---
 
-# Hi, I'm **Nianlin (Cassie) Chen** 👋
+# Hi, I'm **Nianlin (Cassie) Chen** 👋 
+
 
 I am a **biostatistician & statistical programmer** with hands‑on experienced in clinical-trial data workflows, Bayesian modeling, and high-performance statistical computing. My current work involves mapping raw study data to **SDTM/ADaM**, automating QC pipelines and validation checks in **SAS & R**.
 
@@ -38,5 +39,5 @@ My long‑term goal is to develop **statistical methodology for high‑dimension
 ---
 
 ## Programming Skills  
-`SAS` (Advanced, certified) · `R` (caret, ggplot2, rstan) · `Python` (Pandas, scikit-learn, PyMC3) · `SQL` · MATLAB · Git · LaTeX · Quarto/R Markdown 
+`SAS` (Certified in Advanced, Base) · `R` (caret, ggplot2, rstan) · `Python` (Pandas, scikit-learn, PyMC3) · `SQL` · MATLAB · Git · LaTeX · Quarto/R Markdown 
 

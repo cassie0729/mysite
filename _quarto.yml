@@ -9,7 +9,7 @@ website:
   open-graph: true          
 
   navbar:
-    logo: images/ava2.JPG          # 左侧 Logo（相对项目根路径）
+    logo: images/home.png          # 左侧 Logo（相对项目根路径）
     left:
       - text: "Home"                 # 链接首页；也可省略让 logo 指回首页
         href: index.qmd
@@ -28,7 +28,8 @@ website:
 
   page-footer:
     border: true               # 上边界线
-    left: "2025 Nianlin Chen"
+    left: 2025 Nianlin Chen ![](images/537.jpg){width="1em" style="vertical-align:-0.15em"} &nbsp;
+
 
 
 
