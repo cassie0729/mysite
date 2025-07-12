@@ -9,7 +9,7 @@ website:
   open-graph: true          
 
   navbar:
-    logo: images/home.png          # 左侧 Logo（相对项目根路径）
+    logo: images/home.svg          # 左侧 Logo（相对项目根路径）
     left:
       - text: "Home"                 # 链接首页；也可省略让 logo 指回首页
         href: index.qmd

@@ -1,1 +1,22 @@
 /* css styles */
+/* ---- Pulse-scale hover on navbar logo ---- */
+
+/* ① 定义脉动关键帧：在 50% 时放大 1.12 倍 */
+@keyframes pulse {
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+/* ② 给导航栏 logo（默认选择器 .navbar-brand img）加过渡 */
+.navbar-brand img {
+  transition: transform .4s ease-out;
+  transform-origin: center;      /* 放大从中心展开 */
+}
+
+/* ③ hover 时触发动画 */
+.navbar-brand img:hover {
+  animation: pulse .4s ease-out;
+}
+
+
