@@ -57,18 +57,18 @@ boot_ci <- function(B, X, lamdahat) {
 }
 
 ## 2  Monte-Carlo --------------------------------------------------
-bootstrap_eigen_coverage <- function(S  = 5_000,  
-                                     n  = 1_000,   
+bootstrap_eigen_coverage <- function(M  = 5000,  
+                                     n  = 1000,   
                                      p  = 30,     
-                                     B  = 2_000,   
+                                     B  = 2000,   
                                      true_lambda1 = 3) {
   library(MASS)             
   
   lambda <- c(3, 2, 1, rep(1, p - 3))
   Sigma  <- diag(lambda)
   
-  covered <- logical(S)
-  for (s in seq_len(S)) {
+  covered <- logical(M)
+  for (s in seq_len(M)) {
     X <- mvrnorm(n, rep(0, p), Sigma)
     lamdahat <- max(eigen(cov(X), symmetric = TRUE, only.values = TRUE)$values)
     ci <- boot_ci(B, X, lamdahat)
