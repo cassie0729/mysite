@@ -263,7 +263,7 @@
     "href": "index.html#contact",
     "title": "Welcome!",
     "section": "Contact",
-    "text": "Contact\n\nEmail: chennianlin26@163.com\nPhone: +1 (530) 220-4570"
+    "text": "Contact\n\nEmail: chennianlin26@163.com\n\nPhone: +1 (530) 220-4570"
   },
   {
     "objectID": "index.html#research-interests",
@@ -277,6 +277,13 @@
     "href": "index.html#highlighted-projects",
     "title": "Welcome!",
     "section": "Highlighted Projects",
-    "text": "Highlighted Projects\nSee Projects"
+    "text": "Highlighted Projects\n\nSee Projects"
+  },
+  {
+    "objectID": "index.html#professional-memberships",
+    "href": "index.html#professional-memberships",
+    "title": "Welcome!",
+    "section": "Professional Memberships",
+    "text": "Professional Memberships\nStudent Member, American Statistical Association (ASA)\n- Statistical Genetics and Genomics Section\n- Biometrics Section\n- Statistical Learning and Data Science Section"
   }
 ]

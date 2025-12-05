@@ -1,15 +1,16 @@
 ---
 title: "Welcome!"
-page-layout: full     
+page-layout: full
 format:
   html:
     toc: false
     css: styles.css
-freeze: auto            # ← 仅在内容无改动时跳过渲染
+freeze: auto
 ---
 
 <div class="text-center my-5">
-  <img src="images/avatar.png" alt="Avatar" style="width:120px;border-radius:50%;box-shadow:0 0 8px rgba(0,0,0,0.15);" />
+  <img src="images/avatar.png" alt="Avatar" 
+       style="width:120px;border-radius:50%;box-shadow:0 0 8px rgba(0,0,0,0.15);" />
   <h1 class="mt-3"><strong>Nianlin (Cassie) Chen</strong></h1>
   <p class="lead">
     Bayesian Inference · High-dimensional Data Analysis · Clinical Trials · Statistical Computing
@@ -19,25 +20,33 @@ freeze: auto            # ← 仅在内容无改动时跳过渲染
 ---
 
 ## Contact
-- **Email:** [chennianlin26@163.com](mailto:chennianlin26@163.com)
-- **Phone:** +1&nbsp;(530)&nbsp;220-4570  
+
+- **Email:** <a href="mailto:chennianlin26@163.com">chennianlin26@163.com</a>  
+- **Phone:** +1 (530) 220-4570  
 
 ---
-## Professional Memberships
-Student Member, American Statistical Association (ASA) 
-- Statistical Genetics and Genomics Section
-- Biometrics Section
-- Statistical Learning and Data Science Section
+
+## Professional Memberships  
+
+Student Member, **American Statistical Association (ASA)**  
+- Statistical Genetics and Genomics Section  
+- Biometrics Section  
+- Statistical Learning and Data Science Section  
 
 ---
-## Research Interests
-- Bayesian hierarchical modeling &amp; MCMC/HMC  
-- High-dimensional data analysis &amp; PCA  
-- Clinical trials &amp; adaptive design  
+
+## Research Interests  
+
+- Bayesian hierarchical modeling & MCMC/HMC  
+- High-dimensional data analysis & PCA  
+- Clinical trials & adaptive design  
 - Machine learning  
 - Statistical computing  
 
 ---
-## Highlighted Projects
 
-<a class="btn btn-primary btn-lg" href="projects/">See Projects</a>
+## Highlighted Projects  
+
+<div class="text-center my-4">
+  <a class="btn btn-primary btn-lg" href="projects/">See Projects</a>
+</div>
