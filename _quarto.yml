@@ -23,8 +23,8 @@ website:
         href: https://www.linkedin.com/in/nianlin-chen-90b45a175
       - icon: envelope
         href: "mailto:chennianlin26@163.com"
-      #- text: "CV"
-      #  href: 'files/CV_Nianlin_Chen.pdf'
+      - text: "CV"
+        href: 'files/CV_Nianlin_Chen.pdf'
 
   page-footer:
     border: true               # 上边界线
