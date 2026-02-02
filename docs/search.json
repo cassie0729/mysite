@@ -4,28 +4,28 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "I am a biostatistician & statistical programmer with hands‑on experienced in clinical-trial data workflows, Bayesian modeling, and high-performance statistical computing. My current work involves mapping raw study data to SDTM/ADaM, automating QC pipelines and validation checks in SAS & R.\nMy long‑term goal is to develop statistical methodology for high‑dimensional biomedical data, bridging rigorous theory with practical tools that empower scientists and clinicians. I am actively preparing to pursue a PhD in Biostatistics to deepen my expertise in Bayesian inference, adaptive trial design, and machine‑learning–driven biomarker discovery.\n\n\n\n\nM.S. Applied Statistics — University of Michigan, Ann Arbor\n• Course highlights: Bayesian Modeling ▪ Statistical Inference ▪ Survival Analysis ▪ Statistical Computing\nB.S. Mathematics (Analytics & Operations Research) — UC Davis\n• Course highlights: Linear Algebra ▪ Real & Numerical Analysis ▪ Probability ▪ Stochastic Processes ▪ Optimization ▪ Time-Series Analysis\nIndustry — Clinical-trial programming at EDETEK & Teva\n• SDTM/ADaM mapping & generation · TFL generation · automated QC in SAS/R · regulatory submissions support\nResearch — Bootstrap variance of PCA · Bayesian genetic-structure inference (HMC) · dPCA R-package development\n\n\n\n\n\n\nBayesian hierarchical & non‑parametric models\nHigh‑dimensional inference & variable selection\nAdaptive & platform clinical‑trial design\nMachine Learning & optimization\n\n\n\n\n\nSAS (Certified in Advanced, Base) · R (caret, ggplot2, rstan) · Python (Pandas, scikit-learn, PyMC3) · SQL · MATLAB · Git · LaTeX · Quarto/R Markdown"
+    "text": "I am a biostatistician & statistical programmer with hands‑on experienced in clinical-trial data workflows, Bayesian modeling, and high-performance statistical computing. My current work involves mapping raw study data to SDTM/ADaM, automating QC pipelines and validation checks in SAS & R.\nMy long‑term goal is to develop statistical methodology for high‑dimensional biomedical data, bridging rigorous theory with practical tools that empower scientists and clinicians. I am actively preparing to pursue a PhD in Biostatistics to develop principled statistical methods for high-dimensional and genetic data, with an emphasis on Bayesian inference and Modern computational techniques.\n\n\n\n\nM.S. Applied Statistics — University of Michigan, Ann Arbor\n• Course highlights: Bayesian Modeling ▪ Statistical Inference ▪ Survival Analysis ▪ Statistical Computing ▪ Machine Learning\nB.S. Mathematics (Analytics & Operations Research) — University of California, Davis\n• Course highlights: Linear Algebra ▪ Real & Numerical Analysis ▪ Probability ▪ Stochastic Processes ▪ Optimization ▪ Time-Series Analysis\nWork Experience — Statistical programming at EDETEK & Teva\n• SDTM/ADaM mapping & generation · TFL generation · automated QC in SAS/R · regulatory submissions support\nResearch Experience — Bootstrap variance of PCA · Bayesian genetic-structure inference (HMC) · dPCA R-package development\n\n\n\n\n\n\nBayesian hierarchical & non‑parametric models\nHigh‑dimensional inference & variable selection\nStatistical genetics & GWAS (polygenic risk, association testing, functional integration)\nAdaptive & platform clinical‑trial design\nMachine Learning & optimization for biomedical prediction\n\n\n\n\n\n\nStatistical Programming: SAS (Advanced, certified), R (tidyverse, caret, ggplot2, rstan)\n\nMachine Learning: Python (Pandas, scikit-learn, PyMC3, PyTorch)\nComputation & Tools: SQL, MATLAB, Git, LaTeX, Quarto/R Markdown"
   },
   {
     "objectID": "about.html#snapshot",
     "href": "about.html#snapshot",
     "title": "About Me",
     "section": "",
-    "text": "M.S. Applied Statistics — University of Michigan, Ann Arbor\n• Course highlights: Bayesian Modeling ▪ Statistical Inference ▪ Survival Analysis ▪ Statistical Computing\nB.S. Mathematics (Analytics & Operations Research) — UC Davis\n• Course highlights: Linear Algebra ▪ Real & Numerical Analysis ▪ Probability ▪ Stochastic Processes ▪ Optimization ▪ Time-Series Analysis\nIndustry — Clinical-trial programming at EDETEK & Teva\n• SDTM/ADaM mapping & generation · TFL generation · automated QC in SAS/R · regulatory submissions support\nResearch — Bootstrap variance of PCA · Bayesian genetic-structure inference (HMC) · dPCA R-package development"
+    "text": "M.S. Applied Statistics — University of Michigan, Ann Arbor\n• Course highlights: Bayesian Modeling ▪ Statistical Inference ▪ Survival Analysis ▪ Statistical Computing ▪ Machine Learning\nB.S. Mathematics (Analytics & Operations Research) — University of California, Davis\n• Course highlights: Linear Algebra ▪ Real & Numerical Analysis ▪ Probability ▪ Stochastic Processes ▪ Optimization ▪ Time-Series Analysis\nWork Experience — Statistical programming at EDETEK & Teva\n• SDTM/ADaM mapping & generation · TFL generation · automated QC in SAS/R · regulatory submissions support\nResearch Experience — Bootstrap variance of PCA · Bayesian genetic-structure inference (HMC) · dPCA R-package development"
   },
   {
     "objectID": "about.html#current-interests",
     "href": "about.html#current-interests",
     "title": "About Me",
     "section": "",
-    "text": "Bayesian hierarchical & non‑parametric models\nHigh‑dimensional inference & variable selection\nAdaptive & platform clinical‑trial design\nMachine Learning & optimization"
+    "text": "Bayesian hierarchical & non‑parametric models\nHigh‑dimensional inference & variable selection\nStatistical genetics & GWAS (polygenic risk, association testing, functional integration)\nAdaptive & platform clinical‑trial design\nMachine Learning & optimization for biomedical prediction"
   },
   {
     "objectID": "about.html#programming-skills",
     "href": "about.html#programming-skills",
     "title": "About Me",
     "section": "",
-    "text": "SAS (Certified in Advanced, Base) · R (caret, ggplot2, rstan) · Python (Pandas, scikit-learn, PyMC3) · SQL · MATLAB · Git · LaTeX · Quarto/R Markdown"
+    "text": "SAS (Certified in Advanced, Base) · R (caret, ggplot2, rstan) · Python (Pandas, scikit-learn, PyMC3, PyTorch) · SQL · MATLAB · Git · LaTeX · Quarto/R Markdown"
   },
   {
     "objectID": "projects/dpca.html",
@@ -256,7 +256,7 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Bayesian Inference · High-dimensional Data Analysis · Clinical Trials · Statistical Computing"
+    "text": "Bayesian Inference · High-dimensional Data Analysis · Statistical Genetics (GWAS) · Clinical Trials · Machine Learning"
   },
   {
     "objectID": "index.html#contact",
@@ -270,14 +270,14 @@
     "href": "index.html#research-interests",
     "title": "Welcome!",
     "section": "Research Interests",
-    "text": "Research Interests\n\nBayesian hierarchical modeling & MCMC/HMC\n\nHigh-dimensional data analysis & PCA\n\nClinical trials & adaptive design\n\nMachine learning\n\nStatistical computing"
+    "text": "Research Interests\n\nBayesian hierarchical modeling & MCMC/HMC\n\nHigh-dimensional data analysis & PCA\n\nStatistical genetics & GWAS\nAdaptive & platform clinical-trial design\nMachine learning & deep learning for biomedical data"
   },
   {
     "objectID": "index.html#highlighted-projects",
     "href": "index.html#highlighted-projects",
     "title": "Welcome!",
     "section": "Highlighted Projects",
-    "text": "Highlighted Projects\n\nSee Projects"
+    "text": "Highlighted Projects\n\n\nBootstrap PCA\n\n\nMusic Genre Classification\n\n\nDemixed PCA (R package)\n\n\nBayesian Forecasting (Walmart)\n\n\nSee all projects →"
   },
   {
     "objectID": "index.html#professional-memberships",
@@ -285,5 +285,194 @@
     "title": "Welcome!",
     "section": "Professional Memberships",
     "text": "Professional Memberships\nStudent Member, American Statistical Association (ASA)\n- Statistical Genetics and Genomics Section\n- Biometrics Section\n- Statistical Learning and Data Science Section"
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Welcome!",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nStatistical Programming: SAS (Advanced, certified), R (tidyverse, data.table, ggplot2, rstan)\n\nMachine Learning: Python (PyTorch, scikit-learn)\nComputation & Tools: SQL, MATLAB, Git, LaTeX, Quarto/R Markdown"
+  },
+  {
+    "objectID": "slides/intro.html#who-i-am",
+    "href": "slides/intro.html#who-i-am",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Who I am",
+    "text": "Who I am\n\nBiostatistician & Statistical Programmer (SAS / clinical) + Statistics background\n\nInterested in Bayesian modeling + high-dimensional analysis + statistics genetics"
+  },
+  {
+    "objectID": "slides/intro.html#one-line-north-star",
+    "href": "slides/intro.html#one-line-north-star",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "One-line north star",
+    "text": "One-line north star\nI develop principled statistical methods for high-dimensional biomedical/genetic data,\nwith an emphasis on uncertainty quantification, validation, and reproducible workflows.\n\n\nWhat I care about\n\nStructure / confounding that distorts inference\n\nModels that are interpretable and calibrated\n\nStress-testing conclusions with robust validation\n\n\nThis deck (what’s new)\n\nWhy I want a PhD\n\nWhat I’m exploring now\n\nHow I think about “good evidence”"
+  },
+  {
+    "objectID": "slides/intro.html#why-a-phd",
+    "href": "slides/intro.html#why-a-phd",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Why a PhD",
+    "text": "Why a PhD\nI’m pursuing a PhD because for many data-driven biological questions need more than off-the-shelf methods.\n\nBiological data are structured (spatial effects, confounding, batch effects, heterogeneity).\nStandard models can fail when assumptions break or when objectives misalign with the science.\nI want to identify the failure mode, propose a fix, and prove it works via validation, robustness checks, and uncertainty quantification.\n\nA PhD enables me to: formulate → build → validate → package.\nIt also supports my long-term goal to lead scientific projects by providing deeper training and credibility."
+  },
+  {
+    "objectID": "slides/intro.html#the-questions-that-drive-my-work",
+    "href": "slides/intro.html#the-questions-that-drive-my-work",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "The questions that drive my work",
+    "text": "The questions that drive my work\nInstead of starting from a tool, I start from questions like:\n\nWhen do we truly need discrete structure beyond continuous spatial differentiation?\nWhich signals are real vs. artifacts of sampling design, batch effects, or model misspecification?\nHow do we keep uncertainty calibrated when models scale to high-dimensional genomics data?"
+  },
+  {
+    "objectID": "slides/intro.html#research-program-how-my-ideas-fit-together",
+    "href": "slides/intro.html#research-program-how-my-ideas-fit-together",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Research program (how my ideas fit together)",
+    "text": "Research program (how my ideas fit together)\n\n\nA. Modeling\n\nSpatial distance-decay + deviations\n\nBarrier-aware / anisotropic structure\n\nContinuous + discrete components\n\n\nB. Validation\n\nCross-validation / predictive scoring\n\nTargeted posterior predictive checks\n\nLeave-region-out robustness tests\n\n\nC. Scaling\n\nFaster Bayesian inference\n\nHybrid VI/HMC workflows\n\nReproducible, auditable pipelines\n\n\nGoal: methods that separate structure from signal with defensible uncertainty."
+  },
+  {
+    "objectID": "slides/intro.html#mini-proposal-barrier-aware-spatial-covariance",
+    "href": "slides/intro.html#mini-proposal-barrier-aware-spatial-covariance",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Mini-proposal: Barrier-aware spatial covariance",
+    "text": "Mini-proposal: Barrier-aware spatial covariance\nProblem\nIsotropic distance-decay can miss barriers and directional effects, leading to misleading “clusters” or spurious long-distance signals.\nApproach\n- Compare spatial kernels: isotropic vs. anisotropic vs. barrier-aware\n- Use hierarchical priors to regularize flexibility\n- Select complexity via predictive performance (e.g., CV)\nValidation\n- Leave-one-region-out tests\n- Posterior predictive checks targeted at long-distance pairs\n- Sensitivity to sampling density and coordinate perturbations\nDeliverable\nA reproducible pipeline + diagnostics toolkit demonstrating when barriers are supported by data."
+  },
+  {
+    "objectID": "slides/intro.html#mini-proposal-diagnostics-for-long-distance-excess-covariance",
+    "href": "slides/intro.html#mini-proposal-diagnostics-for-long-distance-excess-covariance",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Mini-proposal: Diagnostics for long-distance excess covariance",
+    "text": "Mini-proposal: Diagnostics for long-distance excess covariance\nProblem\nLong-distance excess covariance can indicate gene flow, but it can also arise from artifacts.\nIdea\nBuild a “trust report” that stress-tests long-distance signals:\n\nSubsampling / jackknife over populations\n\nCoordinate perturbation sensitivity\n\nBatch-aware checks (when metadata exists)\n\nTargeted PPCs for far-apart pairs\n\nOutcome\nMore reliable interpretation of admixture-like patterns—especially in messy real datasets."
+  },
+  {
+    "objectID": "slides/intro.html#scaling-practical-bayesian-inference-at-larger-sizes",
+    "href": "slides/intro.html#scaling-practical-bayesian-inference-at-larger-sizes",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Scaling: Practical Bayesian inference at larger sizes",
+    "text": "Scaling: Practical Bayesian inference at larger sizes\nAs datasets grow (more samples, loci, modalities), full Bayesian inference can become expensive.\nWhat I’m exploring - Variational inference with calibration checks\n- Hybrid approaches (VI initialization + selective HMC)\n- Amortized components where appropriate\nNon-negotiable: keep uncertainty meaningful, not just fast."
+  },
+  {
+    "objectID": "slides/intro.html#what-i-bring-evidence-not-a-skills-list",
+    "href": "slides/intro.html#what-i-bring-evidence-not-a-skills-list",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "What I bring (evidence, not a skills list)",
+    "text": "What I bring (evidence, not a skills list)\n\nBayesian workflow mindset: diagnostics, uncertainty, failure modes\n\nValidation-first habits: CV + robustness checks before strong claims\n\nReproducibility: clean configs, auditable outputs, extendable pipelines\n\nBridge-building: translating methods into practical tools for collaborators"
+  },
+  {
+    "objectID": "slides/intro.html#what-im-looking-for",
+    "href": "slides/intro.html#what-im-looking-for",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "What I’m looking for",
+    "text": "What I’m looking for\nI’m excited about groups working on: - Bayesian / high-dimensional methodology for genomics or biomedical data\n- Spatial structure, confounding, robustness, and scalable inference\n- Projects where interpretable conclusions + validated uncertainty matter\nI value: collaboration, open/reproducible research, and clear scientific questions."
+  },
+  {
+    "objectID": "slides/intro.html#links-full-evidence-lives-on-the-website",
+    "href": "slides/intro.html#links-full-evidence-lives-on-the-website",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Links (full evidence lives on the website)",
+    "text": "Links (full evidence lives on the website)\n\nProjects: detailed write-ups\nContact: contact\nBackground: background"
+  },
+  {
+    "objectID": "slides/intro.html#about-me",
+    "href": "slides/intro.html#about-me",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "About me",
+    "text": "About me\nI would like to develop statistical methods for high-dimensional biomedical/genetic data, with an emphasis on uncertainty quantification, validation, and reproducible workflows.\n\n\nWhat I care about\n\nStructure / confounding that distorts inference\n\nModels that are interpretable and reproducible\n\nStress-testing conclusions with robust validation\n\n\nThis deck\n\nWhy I want a PhD\n\nWhat I’m exploring now\nHow modern computational tools can enhance our understanding"
+  },
+  {
+    "objectID": "slides/intro.html#what-i-bring",
+    "href": "slides/intro.html#what-i-bring",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "What I bring",
+    "text": "What I bring\n\nBayesian workflow mindset: diagnostics, uncertainty, failure modes\n\nValidation-first habits: CV + robustness checks before strong claims\n\nReproducibility: clean configs, auditable outputs, extendable pipelines\n\nBridge-building: translating methods into practical tools for collaborators"
+  },
+  {
+    "objectID": "about.html#technical-skills",
+    "href": "about.html#technical-skills",
+    "title": "About Me",
+    "section": "",
+    "text": "Statistical Programming: SAS (Advanced, certified), R (tidyverse, caret, ggplot2, rstan)\n\nMachine Learning: Python (Pandas, scikit-learn, PyMC3, PyTorch)\nComputation & Tools: SQL, MATLAB, Git, LaTeX, Quarto/R Markdown"
+  },
+  {
+    "objectID": "slides/intro.html#introduction-3045s",
+    "href": "slides/intro.html#introduction-3045s",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Introduction (30–45s)",
+    "text": "Introduction (30–45s)\nHi, I’m Nianlin Chen — I also go by Cassie.\nM.S. Applied Statistics (University of Michigan) + math background (UC Davis).\nI’m trained in high-dimensional analysis, Bayesian inference, and reproducible programming.\nProfessionally, I work as a statistical programmer in clinical trials, so I’m used to validation, QC, and audit-ready pipelines.\nFor my PhD, I want to do data-driven biology — especially integrating genetic datasets with modern generative/statistical methods to discover interpretable patterns and improve prediction in health and disease."
+  },
+  {
+    "objectID": "slides/intro.html#north-star-what-i-want-to-do-in-a-phd",
+    "href": "slides/intro.html#north-star-what-i-want-to-do-in-a-phd",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "North star (what I want to do in a PhD)",
+    "text": "North star (what I want to do in a PhD)\nI want to develop interpretable and trustworthy statistical methods for data-driven biological data, especially by integrating genetic datasets with modern generative computational methods.\nEmphasis - Uncertainty + validation (robust conclusions, not just point estimates) - High-dimensional structure (signal vs confounding) - Reproducible pipelines (auditable and extensible research)\n(Background/CV lives on my website — this deck focuses on research narrative.)"
+  },
+  {
+    "objectID": "slides/intro.html#the-3-questions-that-drive-my-work",
+    "href": "slides/intro.html#the-3-questions-that-drive-my-work",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "The 3 questions that drive my work",
+    "text": "The 3 questions that drive my work\n\nWhen do we truly need discrete structure beyond continuous patterns (e.g., isolation-by-distance)?\nWhich signals are real vs artifacts of sampling design, batch effects, or model mismatch?\nHow do we keep uncertainty calibrated as models scale to modern biological datasets?"
+  },
+  {
+    "objectID": "slides/intro.html#what-i-want-to-do-in-a-phd",
+    "href": "slides/intro.html#what-i-want-to-do-in-a-phd",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "What I want to do in a PhD",
+    "text": "What I want to do in a PhD\nI want to develop interpretable and trustworthy statistical methods for data-driven biological data, especially by integrating genetic datasets with modern generative computational methods."
+  },
+  {
+    "objectID": "slides/intro.html#previous-research-experience",
+    "href": "slides/intro.html#previous-research-experience",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Previous research experience",
+    "text": "Previous research experience\nI’ll briefly highlight three experiences that shaped how I think about structure, stability, and validation in high-dimensional data."
+  },
+  {
+    "objectID": "slides/intro.html#bootstrap-pca-uc-davis",
+    "href": "slides/intro.html#bootstrap-pca-uc-davis",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Bootstrap PCA (UC Davis)",
+    "text": "Bootstrap PCA (UC Davis)\nGoal: assess how stable leading PCs are in high-dimensional settings where PCA can be unstable.\nWhat I did - preprocessing + feature standardization\n- bootstrap resampling + repeated PCA\n- examined variance explained + variability of top components\nWhat I learned - PCA is powerful but sensitive to scaling, outliers, and heterogeneity\n- interpretability is not automatic\n- stability/validation should be treated as first-class objectives"
+  },
+  {
+    "objectID": "slides/intro.html#demixed-pca-r-package-university-of-michigan",
+    "href": "slides/intro.html#demixed-pca-r-package-university-of-michigan",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "demixed PCA R package (University of Michigan)",
+    "text": "demixed PCA R package (University of Michigan)\nGoal: build an open-source tool to separate condition-specific effects via ANOVA-style marginalization + reduced-rank regression.\nWhat I did - implemented multiple matrix factorization options (speed vs accuracy)\n- added ridge regularization for stability\n- built simulation + visualization to improve interpretability\nTakeaway - strengthened my ability to translate math ideas into robust, reusable software\n- pushed me to think carefully about validation: when is a pattern meaningful vs an artifact?"
+  },
+  {
+    "objectID": "slides/intro.html#bradburd-lab-spatial-population-structure-modeling",
+    "href": "slides/intro.html#bradburd-lab-spatial-population-structure-modeling",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Bradburd Lab: Spatial population structure modeling",
+    "text": "Bradburd Lab: Spatial population structure modeling\nScientific goal: understand how genetic similarity decays with distance (isolation-by-distance) and how barriers/admixture create deviations.\nCore modeling idea - infer a geogenetic map where distances reflect genetic similarity, not strictly latitude/longitude\n- covariance decreases with geogenetic distance\n- admixture-like signals appear as unusually strong long-distance covariance (often visualized as directional arrows)\nMy role - Bayesian model fitting + diagnostics\n- cross-validation to choose reasonable complexity and avoid overfitting\n- improved reproducibility: code organization, checks, auditable pipelines"
+  },
+  {
+    "objectID": "slides/intro.html#how-modern-computational-tools-can-enhance-our-understanding",
+    "href": "slides/intro.html#how-modern-computational-tools-can-enhance-our-understanding",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "How modern computational tools can enhance our understanding",
+    "text": "How modern computational tools can enhance our understanding\nI’m excited about modern computational tools to make biology more testable and interpretable.\n1 Representation learning for biology (genes/cells)\n\nembeddings can capture complex, nonlinear structure\n\nbut need calibration + validation to avoid spurious patterns\n\n2 Generative modeling as a scientific lens\n\nexplicit generative assumptions clarify what a model claims about biology\n\nposterior uncertainty helps prevent overconfident narratives\n\n3 Reproducible pipelines as an enabler of trust\n\nversioned configs, automated checks, auditable outputs\n\nmakes it easier to iterate, compare models, and share results reliably"
+  },
+  {
+    "objectID": "slides/intro.html#modern-computational-tools-better-understanding",
+    "href": "slides/intro.html#modern-computational-tools-better-understanding",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Modern computational tools → better understanding",
+    "text": "Modern computational tools → better understanding\n\n\nRepresentation learning\n\nPowerful embeddings\n\nNeed calibration + validation\n\nGenerative modeling\n\nClear assumptions\n\nUncertainty prevents overclaiming\n\n\nReproducible pipelines\n\nVersioned configs + checks\n\nAuditable, comparable results\n\nPrinciple: tools should increase understanding, not just metrics."
+  },
+  {
+    "objectID": "slides/intro.html#modern-computational-tools",
+    "href": "slides/intro.html#modern-computational-tools",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Modern computational tools",
+    "text": "Modern computational tools\n\n\nRepresentation learning\n\nPowerful embeddings\n\nNeed calibration + validation\n\nGenerative modeling\n\nClear assumptions\n\nUncertainty prevents overclaiming\n\n\nReproducible pipelines\n\nVersioned configs + checks\n\nAuditable, comparable results\n\nPrinciple: tools should increase understanding, not just metrics."
+  },
+  {
+    "objectID": "slides/intro.html#exploratory-ideas-modern-computational-tools",
+    "href": "slides/intro.html#exploratory-ideas-modern-computational-tools",
+    "title": "Nianlin Chen — Research Snapshot",
+    "section": "Exploratory ideas: modern computational tools",
+    "text": "Exploratory ideas: modern computational tools\n\n\nRepresentation learning\n\nPowerful embeddings\n\nNeed calibration + validation\n\nGenerative modeling\n\nClear assumptions\n\nUncertainty prevents overclaiming\n\n\nReproducible pipelines\n\nVersioned configs + checks\n\nAuditable, comparable results\n\nPrinciple: tools should increase understanding, not just metrics."
   }
 ]

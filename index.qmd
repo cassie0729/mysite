@@ -9,11 +9,10 @@ freeze: auto
 ---
 
 <div class="text-center my-5">
-  <img src="images/avatar.png" alt="Avatar" 
-       style="width:120px;border-radius:50%;box-shadow:0 0 8px rgba(0,0,0,0.15);" />
+  <img src="images/avatar_v2.jpg" alt="Avatar" class="headshot" />
   <h1 class="mt-3"><strong>Nianlin (Cassie) Chen</strong></h1>
   <p class="lead">
-    Bayesian Inference · High-dimensional Data Analysis · Clinical Trials · Statistical Computing
+    Bayesian Inference · High-dimensional Data Analysis · Statistical Genetics (GWAS) · Clinical Trials · Machine Learning
   </p>
 </div>
 
@@ -39,14 +38,18 @@ Student Member, **American Statistical Association (ASA)**
 
 - Bayesian hierarchical modeling & MCMC/HMC  
 - High-dimensional data analysis & PCA  
-- Clinical trials & adaptive design  
-- Machine learning  
-- Statistical computing  
+- Statistical genetics & GWAS
+- Adaptive & platform clinical-trial design 
+- Machine learning & deep learning for biomedical data  
 
 ---
 
 ## Highlighted Projects  
 
-<div class="text-center my-4">
-  <a class="btn btn-primary btn-lg" href="projects/">See Projects</a>
-</div>
+<ul class="project-menu">
+  <li><a href="./projects/bootstrap.html">Bootstrap PCA</a></li>
+  <li><a href="./projects/music.html">Music Genre Classification</a></li>
+  <li><a href="./projects/dpca.html">Demixed PCA (R package)</a></li>
+  <li><a href="./projects/hmc.html">Bayesian Forecasting (Walmart)</a></li>
+  <li><a href="projects/">See all projects →</a></li>
+</ul>

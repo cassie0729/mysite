@@ -19,4 +19,14 @@
   animation: pulse .4s ease-out;
 }
 
+/* Professional rectangular headshot */
+.headshot{
+  width: 160px;            /* 160–220 都可以，按你版面调 */
+  aspect-ratio: 4 / 5;     /* 固定成“证件照感”比例 */
+  object-fit: cover;       /* 关键：自动裁剪填满 */
+  object-position: 50% 35%;/* 可微调裁剪位置：上下更重要时改 30%/40% */
+  border-radius: 14px;     /* 圆角矩形 */
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
 

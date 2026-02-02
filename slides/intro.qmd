@@ -1,0 +1,111 @@
+---
+title: "Nianlin Chen — Research Snapshot"
+format:
+  revealjs:
+    slide-number: true
+    toc: false
+    incremental: false
+    theme: simple
+    center: false
+    width: 1280
+    height: 720
+    navigation-mode: linear
+---
+
+## What I want to do in a PhD
+
+**I want to develop interpretable and trustworthy statistical methods for data-driven biological data**, especially by integrating **genetic datasets** with **modern generative computational methods**.
+
+---
+
+## Why a PhD
+
+I’m pursuing a PhD because for many **data-driven biological questions** need more than off-the-shelf methods.
+
+- **Biological data are structured** (spatial effects, confounding, batch effects, heterogeneity).
+- Standard models can fail when **assumptions break** or when objectives **misalign** with the science.
+- I want to **identify the failure mode**, propose a fix, and prove it works via validation, robustness checks, and uncertainty quantification.
+
+
+**A PhD enables me to:** formulate → build → validate → package.  
+It also supports my long-term goal to lead scientific projects by providing deeper training and credibility.
+
+---
+
+## Bootstrap PCA (UC Davis)
+
+**Goal:** assess how stable leading PCs are in high-dimensional settings where PCA can be unstable.
+
+**What I did**
+- preprocessing + feature standardization  
+- bootstrap resampling + repeated PCA  
+- examined variance explained + variability of top components
+
+**What I learned**
+- PCA is powerful but sensitive to scaling, outliers, and heterogeneity  
+- interpretability is not automatic  
+- stability/validation should be treated as first-class objectives
+
+---
+
+## demixed PCA R package (University of Michigan)
+
+**Goal:** build an open-source tool to separate condition-specific effects via ANOVA-style marginalization + reduced-rank regression.
+
+**What I did**
+- implemented multiple matrix factorization options (speed vs accuracy)  
+- added ridge regularization for stability  
+- built simulation + visualization to improve interpretability
+
+**Takeaway**
+- strengthened my ability to translate math ideas into **robust, reusable software**  
+- pushed me to think carefully about **validation**: when is a pattern meaningful vs an artifact?
+
+---
+
+## Bradburd Lab: Spatial population structure modeling
+
+**Scientific goal:** understand how genetic similarity decays with distance (isolation-by-distance) and how barriers/admixture create deviations.
+
+**Core modeling idea**
+- infer a **geogenetic map** where distances reflect **genetic similarity**, not strictly latitude/longitude  
+- **covariance decreases** with geogenetic distance  
+- **admixture-like signals** appear as unusually strong long-distance covariance (often visualized as directional arrows)
+
+**My role**
+- Bayesian model fitting + diagnostics  
+- cross-validation to choose reasonable complexity and avoid overfitting  
+- improved reproducibility: code organization, checks, auditable pipelines
+
+---
+
+## Exploratory ideas: modern computational tools
+
+::: {.columns}
+::: {.column width="50%"}
+### Representation learning
+- Powerful embeddings  
+- Need **calibration + validation**
+
+### Generative modeling
+- Clear assumptions  
+- **Uncertainty** prevents overclaiming
+:::
+
+::: {.column width="50%"}
+### Reproducible pipelines
+- Versioned configs + checks  
+- Auditable, comparable results
+
+**Principle:** tools should increase *understanding*, not just metrics.
+:::
+:::
+
+
+---
+
+## Links (full evidence lives on the website)
+
+- **Projects:** [detailed write-ups](/projects/)
+- **Contact:** [contact](/index.html)
+- **Background:** [background](/about.html)
