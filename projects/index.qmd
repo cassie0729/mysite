@@ -3,10 +3,10 @@ title: "Highlighted Projects"
 description: "Explore my projects"
 format: html
 
-open-graph:
-  title: "Highlighted Projects"
-  description: "Explore my projects"
-  image: "images/thumbnail.png"
+metadata:
+  og:description: "Explore my projects"
+  og:image: "images/thumbnail.png"
+  og:title: "Highlighted Projects"
 
 
 listing:
