@@ -1,7 +1,13 @@
 ---
 title: "Highlighted Projects"
-image: "projects/images/thumbnail.png"
+description: "Explore my projects"
 format: html
+
+open-graph:
+  title: "Highlighted Projects"
+  description: "Explore my projects"
+  image: "images/thumbnail.png"
+
 
 listing:
   type: grid            # 网格卡片，最通用
