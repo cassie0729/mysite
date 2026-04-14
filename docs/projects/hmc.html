@@ -525,7 +525,7 @@ Four Stan NUTS chains (2 000 warm-up + 2 000 sampling iterations each) were atte
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/nianlinc\.github\.io");
+        var filterRegex = new RegExp("https:\/\/nianlinc\.github\.io\/mysite\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

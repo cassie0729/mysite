@@ -498,7 +498,7 @@ It also supports my long-term goal to lead scientific projects by providing deep
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/nianlinc\.github\.io");
+            var filterRegex = new RegExp("https:\/\/nianlinc\.github\.io\/mysite\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

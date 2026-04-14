@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Nianlin Chen"     
-  site-url: "https://nianlinc.github.io"  
+  site-url: "https://nianlinc.github.io/mysite/"  
   description: "Biostatistics & Statistical Programming · Clinical Trials"
   open-graph: true          
 
