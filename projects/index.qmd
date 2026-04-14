@@ -1,5 +1,6 @@
 ---
 title: "Highlighted Projects"
+image: "projects/images/thumbnail.png"
 format: html
 
 listing:
